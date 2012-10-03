@@ -21,6 +21,6 @@ style.setAttributeNode(tipo);
 
 head.appendChild(style);
 
-divBarra.innerHTML(conteudoBarra);
+divBarra.innerHTML = conteudoBarra;
 
 })();
