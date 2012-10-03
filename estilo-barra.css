@@ -81,7 +81,7 @@ table {
     width: 161px;
     height: 28px;
     text-indent: -1000px;
-    background: #004b82 url(imagens/ai.png) no-repeat 0 4px;
+    background: #7F7F7F url(imagens/ai.png) no-repeat 0 4px;
 }
 
 #barra-brasil .brasilgov {
@@ -89,5 +89,5 @@ table {
     width: 108px;
     height: 28px;
     text-indent: -1000px;
-    background: #004b82 url(imagens/brasil.png) no-repeat 0 4px;
+    background: #7F7F7F url(imagens/brasil.png) no-repeat 0 4px;
 }
