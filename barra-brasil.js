@@ -7,17 +7,25 @@ var divBarra = document.getElementById('barra-brasil');
 
 var head = document.getElementsByTagName('head')[0];
 
-var style = document.createElement('style');
+var link = document.createElement('link');
 
-var src = document.createAttribute("src");
+var href = document.createAttribute("href");
 //    src.nodeValue = "http://barra.brasil.gov.br/estilo-barra.css";
-    src.nodeValue = "http://189.9.137.173/estilo-barra.css";
+    href.nodeValue = "http://189.9.137.173/estilo-barra.css";
 
 var tipo = document.createAttribute("type");
-	tipo.nodeValue = "stylesheet/css";
+	tipo.nodeValue = "text/css";
 
-style.setAttributeNode(src);
-style.setAttributeNode(tipo);
+var rel = document.createAttribute("rel");
+	rel.nodeValue = "stylesheet";
+
+var media = document.createAttribute("media");
+	media.nodeValue = "all";
+
+link.setAttributeNode(href);
+link.setAttributeNode(tipo);
+link.setAttributeNode(rel);
+link.setAttributeNode(media);
 
 head.appendChild(style);
 
