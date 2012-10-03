@@ -1,0 +1,24 @@
+Projeto Barra Brasil Distribuída - Desenvolvimento
+
+Requisitos da Barra
+
+1. A Barra deve ser adaptável a um desenho fluído e fixo
+2. A Barra deve suportar diferentes opções de cor de fundo
+3. A Barra deve suportar a inclusão dinâmica do nome da organização
+4. A Barra deve funcionar nos navegadores: 
+	Internet Explorer versão 8 ou superior
+	Mozilla Firefox versão
+	Google Chrome versão
+	Safari versão
+	Opera versão
+	Navegadores de dispositivos móveis
+
+5. A Barra deve degradar graciosamente (graceful degradation ou progressive enhancement) clientes que não possuam compatibilidade ou no qual o javascript esteja desligado
+
+6. A barra deve ser acessível
+
+Considerações sobre a arquitetura
+
+1. A barra será hospedada em local centralizado e chamada de forma distribuída pelos portais institucionais
+
+2. A barra será incluída via javascript minificado, 
