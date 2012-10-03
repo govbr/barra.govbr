@@ -5,7 +5,7 @@ var conteudoBarra = '<div class="barra"><ul><li><a href="http://www.acessoainfor
 
 var divBarra = document.getElementById('barra-brasil');
 
-var head = document.getElementByTagName('head');
+var head = document.getElementsByTagName('head')[0];
 
 var style = document.createElement('style');
 
