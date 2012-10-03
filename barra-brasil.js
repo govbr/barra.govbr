@@ -27,7 +27,7 @@ link.setAttributeNode(tipo);
 link.setAttributeNode(rel);
 link.setAttributeNode(media);
 
-head.appendChild(style);
+head.appendChild(link);
 
 divBarra.innerHTML = conteudoBarra;
 
