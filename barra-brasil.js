@@ -10,7 +10,8 @@ var head = document.getElementByTagName('head');
 var style = document.createElement('style');
 
 var src = document.createAttribute("src");
-    src.nodeValue = "http://barra.brasil.gov.br/estilo-barra.css";
+//    src.nodeValue = "http://barra.brasil.gov.br/estilo-barra.css";
+    src.nodeValue = "http://189.9.137.173/estilo-barra.css";
 
 var tipo = document.createAttribute("type");
 	tipo.nodeValue = "stylesheet";
