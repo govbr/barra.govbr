@@ -51,7 +51,7 @@ body {
     display: block;
     width: 161px;
     height: 28px;
-    text-indent: -1000px;
+    text-indent: -99999px;
     background: #7F7F7F url(imagens/ai.png) no-repeat 0 4px;
 }
 
@@ -59,6 +59,6 @@ body {
     display: block;
     width: 108px;
     height: 28px;
-    text-indent: -1000px;
+    text-indent: -99999px;
     background: #7F7F7F url(imagens/brasil.png) no-repeat 0 4px;
 }
