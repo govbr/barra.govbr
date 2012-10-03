@@ -55,7 +55,7 @@ table {
     position:relative;
     overflow:hidden;
     min-width:1000px;
-    background: #004b82 url(imagens/barra-brasil-v3-bgx.png) center bottom no-repeat;
+    background: #7F7F7F url(imagens/barra-brasil-v3-bgx.png) center bottom no-repeat;
 }
 
 #barra-brasil .barra {
@@ -86,7 +86,7 @@ table {
 
 #barra-brasil .brasilgov {
     display: block;
-    width: 101px;
+    width: 108px;
     height: 28px;
     text-indent: -1000px;
     background: #004b82 url(imagens/brasil.png) no-repeat 0 4px;
