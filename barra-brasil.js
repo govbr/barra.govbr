@@ -14,7 +14,7 @@ var src = document.createAttribute("src");
     src.nodeValue = "http://189.9.137.173/estilo-barra.css";
 
 var tipo = document.createAttribute("type");
-	tipo.nodeValue = "stylesheet";
+	tipo.nodeValue = "stylesheet/css";
 
 style.setAttributeNode(src);
 style.setAttributeNode(tipo);
