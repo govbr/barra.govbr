@@ -8,9 +8,10 @@ generate:
     source:
       - assets/conteudo-barra.html
       - assets/barra-brasil.coffee
-      - raw: "})();"
     template: |
-        (function(){var conteudoBarra = '${source|trim,jsliteral}';
+        (function(){
+            var conteudoBarra = '${source|trim,jsliteral}';
+        })();
 
 
 - estilo-barra.css:
