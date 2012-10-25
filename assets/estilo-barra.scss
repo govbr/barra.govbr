@@ -28,7 +28,8 @@ body {
   position: relative;
   overflow: hidden;
   min-width: 1000px;
-  background: #7f7f7f embed("imagens/barra-brasil-v3-bgx.png") center bottom no-repeat;
+  $cor: \{\{ cor \}\};
+  background: $cor embed("imagens/barra-brasil-v3-bgx.png") center bottom no-repeat;
   .barra {
     display: block;
     width: 960px;
@@ -49,13 +50,13 @@ body {
     width: 161px;
     height: 28px;
     text-indent: -99999px;
-    background: #7f7f7f embed("imagens/ai.png") no-repeat 0 4px;
+    background: $cor embed("imagens/ai.png") no-repeat 0 4px;
   }
   .brasilgov {
     display: block;
     width: 108px;
     height: 28px;
     text-indent: -99999px;
-    background: #7f7f7f embed("imagens/brasil.png") no-repeat 0 4px;
+    background: $cor embed("imagens/brasil.png") no-repeat 0 4px;
   }
 }
