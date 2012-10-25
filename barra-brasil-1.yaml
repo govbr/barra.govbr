@@ -6,7 +6,12 @@ generate:
 
 - barra-brasil.js:
     source:
+      - assets/conteudo-barra.html
       - assets/barra-brasil.coffee
+      - raw: "})();"
+    template: |
+        (function(){var conteudoBarra = '${source|trim,jsliteral}';
+
 
 - estilo-barra.css:
     source:
@@ -18,9 +23,9 @@ generate:
 
 - barra-brasil-css.js:
     source:
-      - raw: "barrabrasil.insere_css('"
       - build/estilo-barra.css
-      - raw: "');" # fechamento da chamada de funcao
+    template: |
+        barrabrasil.insere_css('${source|trim,jsliteral}');
 
 css.embed: true
 css.embed.only: true

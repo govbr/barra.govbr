@@ -1,5 +1,3 @@
-(->
-  conteudoBarra = "<div class=\"barra\"><ul><li><a href=\"http://www.acessoainformacao.gov.br\" class=\"ai\" title=\"Acesso à informação\">www.sic.gov.br</a></li> <li><a href=\"http://www.brasil.gov.br\" class=\"brasilgov\" title=\"Portal de Estado do Brasil\">www.brasil.gov.br</a></li></ul></div>"
   divBarra = document.getElementById("barra-brasil")
   head = document.getElementsByTagName("head")[0]
   link = document.createElement("link")
@@ -20,4 +18,3 @@
   link.setAttributeNode media
   head.appendChild link
   divBarra.innerHTML = conteudoBarra
-)()
