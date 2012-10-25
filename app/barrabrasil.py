@@ -9,7 +9,7 @@ def pagina_teste():
     <head></head>
     <body>
     <div id="barra-brasil"><a href="http://brasil.gov.br" style="background:#7F7F7F; height: 20px; padding:4px 0 4px 10px; display: block; font-family:sans,sans-serif; text-decoration:none; color:white; ">Portal do Governo Brasileiro</a></div>
-    <script src="barra.js?cor=preto" type="text/javascript"></script>
+    <script src="barra.js?cor=verde" type="text/javascript"></script>
     </body>
     </html>
     '''
@@ -20,7 +20,7 @@ def barra():
     nome_cor = request.args.get('cor', 'azul')
     paleta = {
         'azul': '#004B82',
-        'preto': '#000000',
+        'preta': '#000000',
         'cinza': '#7F7F7F',
         'verde': '#00500F',
     }

@@ -8,11 +8,10 @@ generate:
     source:
       - assets/conteudo-barra.html
       - assets/barra-brasil.coffee
+      - raw: "})();"  # fechamento do escopo da funcao anonima
     template: |
         (function(){
-            var conteudoBarra = '${source|trim,jsliteral}';
-        })();
-
+            var conteudoBarra = '${source|trim}';
 
 - estilo-barra.css:
     source:
@@ -26,7 +25,7 @@ generate:
     source:
       - build/estilo-barra.css
     template: |
-        barrabrasil.insere_css('${source|trim,jsliteral}');
+        window._barrabrasil.insere_css('${source|trim}');
 
 css.embed: true
 css.embed.only: true
