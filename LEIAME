@@ -1,5 +1,15 @@
 Projeto Barra Brasil Distribuída - Desenvolvimento
 
+Como instalar
+
+Dependências:
+
+ - Flask
+ - assetgen
+ - node.js
+   - coffeescript
+   - sass
+
 Requisitos da Barra
 
 1. A Barra deve ser adaptável a um desenho fluído e fixo
