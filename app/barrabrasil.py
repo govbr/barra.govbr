@@ -1,4 +1,4 @@
-from flask import Flask, url_for, render_template, request
+from flask import Flask, url_for, render_template, request, make_response
 app = Flask(__name__)
 
 @app.route('/')
@@ -25,7 +25,9 @@ def barra():
         'verde': '#00500F',
     }
     cor = paleta.get(nome_cor, '#004B82')
-    return render_template('barra-brasil.js', cor=cor)
+    resposta = make_response(render_template('barra-brasil.js', cor=cor))
+    resposta.headers['Content-type'] = 'application/javascript'
+    return resposta
 
 if __name__ == '__main__':
     app.run(debug=True)
