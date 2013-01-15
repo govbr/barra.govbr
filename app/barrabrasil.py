@@ -1,4 +1,5 @@
-from flask import Flask, url_for, render_template, request, make_response
+from flask import Flask, url_for, render_template, request, Response, make_response
+import hashlib
 app = Flask(__name__)
 
 @app.route('/')
@@ -25,8 +26,16 @@ def barra():
         'verde': '#00500F',
     }
     cor = paleta.get(nome_cor, '#004B82')
-    resposta = make_response(render_template('barra-brasil.js', cor=cor))
-    resposta.headers['Content-type'] = 'application/javascript'
+    conteudo = render_template('barra-brasil.js', cor=cor)
+    etag = hashlib.sha1(conteudo.encode('utf-8')).hexdigest()
+    if request.if_none_match and \
+              etag in request.if_none_match:
+        resposta = Response(status=304)
+    else: # nao esta em cache do navegador
+        resposta = make_response(conteudo)
+        resposta.set_etag(etag)
+        resposta.headers['Content-type'] = 'application/javascript'
+    resposta.headers['Cache-control'] = 'max-age: 3600'
     return resposta
 
 if __name__ == '__main__':
