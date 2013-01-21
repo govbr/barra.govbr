@@ -1,0 +1,62 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+#barra-brasil {
+  div, a, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+  }
+}
+
+body {
+  line-height: 1;
+}
+
+#barra-brasil ul {
+  list-style: none;
+}
+
+/* Ministerio do Planejamento */
+
+#barra-brasil {
+  position: relative;
+  overflow: hidden;
+  min-width: 1000px;
+  $cor: \{\{ cor \}\};
+  background: $cor embed("imagens/barra-brasil-v3-bgx.png") center bottom no-repeat;
+  .barra {
+    display: block;
+    width: 960px;
+    height: 28px;
+    margin: 0 auto;
+    background: embed("imagens/barra-brasil-v3-bgx.gif") 0 bottom repeat-x;
+    ul {
+      float: right;
+      width: 319px;
+      li {
+        float: left;
+        padding-left: 25px;
+      }
+    }
+  }
+  .ai {
+    display: block;
+    width: 161px;
+    height: 28px;
+    text-indent: -99999px;
+    background: $cor embed("imagens/ai.png") no-repeat 0 4px;
+  }
+  .brasilgov {
+    display: block;
+    width: 108px;
+    height: 28px;
+    text-indent: -99999px;
+    background: $cor embed("imagens/brasil.png") no-repeat 0 4px;
+  }
+}
