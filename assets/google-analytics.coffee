@@ -1,5 +1,5 @@
 _gaq = _gaq or []
-_gaq.push ["_setAccount", "UA-37670561-1"]
+_gaq.push ["_setAccount", "UA-34001692-4"]
 _gaq.push ["_setDomainName", "gov.br"]
 _gaq.push ["_trackPageview"]
 (->
