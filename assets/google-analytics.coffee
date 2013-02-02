@@ -1,7 +1,7 @@
 _getDomain = ->
   window.location.hostname.match(/(?:www[0-9]?\.)?(.[^/:]+)/)[1]
 _gaq = _gaq or []
-_gaq.push ["_setAccount", "UA-34001692-4"]
+_gaq.push ["_setAccount", "UA-38119387-1"]
 _gaq.push ["_setDomainName", _getDomain]
 _gaq.push ["_trackPageview"]
 (->
