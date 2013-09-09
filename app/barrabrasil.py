@@ -27,7 +27,9 @@ def barra():
     #    'verde': '#00500F',
     #}
     #cor = paleta.get(nome_cor, '#004B82')
-    conteudo = render_template('barra-brasil.js')
+    #conteudo = render_template('barra-brasil.js', cor=cor)
+    with app.open_resource('templates/barra-brasil.js') as f:
+        conteudo = f.read().decode('utf-8')
     etag = hashlib.sha1(conteudo.encode('utf-8')).hexdigest()
     if request.if_none_match and \
               etag in request.if_none_match:
