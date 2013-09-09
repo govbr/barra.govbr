@@ -21,12 +21,39 @@
 
 /* Css específico */
 
+/*   web font   */
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"), local("OpenSans"), url("http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff") /* embed("fonts/opensans.woff") */ format("woff");
+}
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url("http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff") /* embed("fonts/opensans-bold.woff") */ format("woff");
+}
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url("http://themes.googleusercontent.com/static/fonts/opensans/v6/EInbV5DfGHOiMmvb1Xr-hnhCUOGz7vYGh680lGh-uXM.woff") /* embed("fonts/opensans-extrabold.woff") */ format("woff");
+}
+
+/*  fim da web font   */
+
 #barra-brasil {
     height: 32px;
     background: #f1f1f1;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 12px;
     line-height: 32px;
+    font-family: "Open Sans",Arial,Helvetica,sans-serif;
+    a {
+        text-decoration: none;
+    }
 }
 
 #wrapper-barra-brasil {
@@ -83,3 +110,4 @@
 @media screen and (min-width: 960px) {
     #wrapper-barra-brasil { width: 960px; }
 }
+
