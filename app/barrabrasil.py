@@ -18,15 +18,16 @@ def pagina_teste():
 
 @app.route('/barra.js')
 def barra():
-    nome_cor = request.args.get('cor', 'azul')
-    paleta = {
-        'azul': '#004B82',
-        'preta': '#000000',
-        'cinza': '#7F7F7F',
-        'verde': '#00500F',
-    }
-    cor = paleta.get(nome_cor, '#004B82')
-    conteudo = render_template('barra-brasil.js', cor=cor)
+    # nova barra nao tem mais opcoes de cor
+    #nome_cor = request.args.get('cor', 'azul')
+    #paleta = {
+    #    'azul': '#004B82',
+    #    'preta': '#000000',
+    #    'cinza': '#7F7F7F',
+    #    'verde': '#00500F',
+    #}
+    #cor = paleta.get(nome_cor, '#004B82')
+    conteudo = render_template('barra-brasil.js')
     etag = hashlib.sha1(conteudo.encode('utf-8')).hexdigest()
     if request.if_none_match and \
               etag in request.if_none_match:
