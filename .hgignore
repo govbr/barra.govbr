@@ -1,0 +1,9 @@
+syntax: glob
+
+*.pyc
+*~
+*.orig
+build/*
+.sass-cache/*
+assets.json
+app/templates/*
