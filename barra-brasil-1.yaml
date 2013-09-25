@@ -8,7 +8,6 @@ generate:
     source:
       - assets/conteudo-barra.html
       - assets/barra-brasil.coffee
-      - assets/google-analytics.coffee
       - raw: "})();"  # fechamento do escopo da funcao anonima (ver template abaixo)
     template: |
         (function(){
