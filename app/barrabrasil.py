@@ -4,30 +4,17 @@ app = Flask(__name__)
 
 @app.route('/')
 def pagina_teste():
-    # apos o desenvolvimento substituir por redirect para e-pwg
-    bootstrap = '''
-    <html>
-    <head></head>
-    <body>
-    <div id="barra-brasil"><a href="http://brasil.gov.br" style="background:#7F7F7F; height: 20px; padding:4px 0 4px 10px; display: block; font-family:sans,sans-serif; text-decoration:none; color:white; ">Portal do Governo Brasileiro</a></div>
-    <script src="barra.js?cor=verde" type="text/javascript"></script>
-    </body>
-    </html>
-    '''
-    return bootstrap # % url_for('static', filename='barra-brasil.js')
+    try:
+        with app.open_resource('templates/exemplo.html') as f:
+            conteudo = f.read().decode('utf-8')
+        resposta = make_response(conteudo)
+        resposta.headers['Content-type'] = 'text/html; charset=utf-8'
+        return resposta
+    except IOError:
+        return make_response("<h1>403 Forbidden</h1>", 403)
 
 @app.route('/barra.js')
 def barra():
-    # nova barra nao tem mais opcoes de cor
-    #nome_cor = request.args.get('cor', 'azul')
-    #paleta = {
-    #    'azul': '#004B82',
-    #    'preta': '#000000',
-    #    'cinza': '#7F7F7F',
-    #    'verde': '#00500F',
-    #}
-    #cor = paleta.get(nome_cor, '#004B82')
-    #conteudo = render_template('barra-brasil.js', cor=cor)
     with app.open_resource('templates/barra-brasil.js') as f:
         conteudo = f.read().decode('utf-8')
     etag = hashlib.sha1(conteudo.encode('utf-8')).hexdigest()
@@ -42,4 +29,4 @@ def barra():
     return resposta
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
