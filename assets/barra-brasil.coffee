@@ -10,6 +10,7 @@
   idNovaDiv = document.createAttribute("id")
   idNovaDiv.nodeValue = "barra-brasil"
   novaDiv.setAttributeNode idNovaDiv
+  # conteudoBarra definido no barra-brasil-1.yaml e atribuido pelo assetgen
   novaDiv.innerHTML = conteudoBarra
   body.insertBefore(novaDiv, body.childNodes[0])
   
@@ -29,12 +30,3 @@
         style.appendChild conteudo
         head.appendChild style
 
-  #Inserindo tag javascript do Serpro Analytics
-  novoScript = document.createElement("script")
-  tipo = document.createAttribute("type")
-  tipo.nodeValue = "text/javascript"
-  src = document.createAttribute("src")
-  src.nodeValue = "http://coletajavascript.serpro.gov.br/estatistica.js"
-  novoScript.setAttributeNode tipo
-  novoScript.setAttributeNode src
-  head.appendChild novoScript
