@@ -1,5 +1,5 @@
   divBarra = document.getElementById("barra-brasil")
-  divBarra.parentNode.removeChild(divBarra)
+  divBarra.parentNode.removeChild(divBarra) if divBarra
   head = document.getElementsByTagName("head")[0]
   body = document.getElementsByTagName("body")[0]
 
