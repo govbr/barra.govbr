@@ -27,6 +27,11 @@
         conteudo = document.createTextNode(css)
         style.setAttributeNode tipo
         style.setAttributeNode media
-        style.appendChild conteudo
+        
+        if style.styleSheet #Hack para IE8
+            style.styleSheet.cssText = css
+        else
+            style.appendChild conteudo
+        
         head.appendChild style
 
