@@ -24,14 +24,13 @@
         tipo.nodeValue = "text/css"
         media = document.createAttribute("media")
         media.nodeValue = "all"
-        conteudo = document.createTextNode(css)
         style.setAttributeNode tipo
         style.setAttributeNode media
         
         if style.styleSheet #Hack para IE8
             style.styleSheet.cssText = css
         else
-            style.appendChild conteudo
+            style.appendChild document.createTextNode(css)
         
         head.appendChild style
 
