@@ -6,8 +6,9 @@ generate:
 
 - barra-brasil.js:
     source:
-      - assets/conteudo-barra.html
+      - assets/conteudo-barra-trimmed.html
       - assets/barra-brasil.coffee
+      - assets/counter.coffee
       - assets/estatisticas.coffee
       - raw: "})();"  # fechamento do escopo da funcao anonima (ver template abaixo)
     template: |
@@ -16,7 +17,7 @@ generate:
 
 - estilo-barra.css:
     source:
-      - assets/estilo-barra.scss
+      - assets/barra-copa.scss
     depends:
       - assets/imagens/*
     embed.path.root: assets
@@ -26,7 +27,7 @@ generate:
     source:
       - build/estilo-barra.css
     template: |
-        window._barrabrasil.insere_css('${source|trim}');
+        window._barrabrasil.insere_css('${source|trim}');window._barrabrasil.copa_counter();
 
 css.embed: true
 css.embed.only: true
@@ -35,7 +36,7 @@ js.compress: false
 js.uglify.bin: uglifyjs
 output.directory: build
 output.hashed: false
-output.manifest: assets.json
+output.manifest: app/assets.json
 
 profile.dev:
   css.compress: false

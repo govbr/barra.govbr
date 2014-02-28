@@ -14,7 +14,7 @@ def pagina_teste():
         return make_response("<h1>403 Forbidden</h1>", 403)
 
 @app.route('/barra.js')
-def barra(profile='default'):
+def barra(profile='copa2014'):
     with app.open_resource('templates/%s/barra-brasil.js' % profile) as f:
         conteudo = f.read().decode('utf-8')
     etag = hashlib.sha1(conteudo.encode('utf-8')).hexdigest()

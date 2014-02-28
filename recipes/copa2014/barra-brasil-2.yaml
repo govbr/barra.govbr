@@ -11,7 +11,7 @@ generate:
 
 css.embed: true
 css.embed.only: true
-output.directory: ../../app/templates/default
+output.directory: ../../app/templates/copa2014
 output.hashed: false
 output.manifest: assets.json
 
