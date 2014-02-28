@@ -14,8 +14,8 @@ def pagina_teste():
         return make_response("<h1>403 Forbidden</h1>", 403)
 
 @app.route('/barra.js')
-def barra():
-    with app.open_resource('templates/barra-brasil.js') as f:
+def barra(profile='default'):
+    with app.open_resource('templates/%s/barra-brasil.js' % profile) as f:
         conteudo = f.read().decode('utf-8')
     etag = hashlib.sha1(conteudo.encode('utf-8')).hexdigest()
     if request.if_none_match and \
@@ -29,4 +29,9 @@ def barra():
     return resposta
 
 if __name__ == '__main__':
+    from sys import argv
+    if len(argv) > 1:
+        profile = argv[1]
+    else:
+        profile = 'default'
     app.run(debug=False)
