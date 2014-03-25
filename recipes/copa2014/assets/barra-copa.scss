@@ -48,7 +48,7 @@ div#wrapper-barra-brasil {
       display: block;
       padding-left: 42px;
       width: 43px;
-      background: url("imagens/bandeira-brasil.png") 8px center no-repeat;
+      background:embed("imagens/bandeira-brasil.png") 8px center no-repeat;
       text-transform: uppercase;
       line-height: 19px;
     }
@@ -70,7 +70,7 @@ div#wrapper-barra-brasil {
       margin: 0 2px 0 1px;
     }
     span span {
-      background: url("imagens/counter-bg.png") no-repeat;
+      background:embed("imagens/counter-bg.png") no-repeat;
       color: #FCCA00;
       display: inline-block;
       width: 16px;
