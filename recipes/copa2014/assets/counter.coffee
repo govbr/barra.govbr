@@ -23,5 +23,3 @@ window._barrabrasil.copa_counter = () ->
       else r.innerHTML = "Amanh&atilde; come&ccedil;a a Copa!"  if parseInt(e) is 1
     return
 
-  copa_counter()
-  return
