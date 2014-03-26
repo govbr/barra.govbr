@@ -9,7 +9,7 @@ window._barrabrasil.copa_counter = () ->
     t = new Date()
     c = new Date(2014, 5, 12, 0, 0, 0)
     h = ""
-    e = String(Math.round(Math.abs((t.getTime() - c.getTime()) / (24 * 60 * 60 * 1000))) + 1)
+    e = String(Math.round(Math.abs((t.getTime() - c.getTime()) / (24 * 60 * 60 * 1000))))
     a = (e).split("")
 
     i = 0
@@ -20,6 +20,6 @@ window._barrabrasil.copa_counter = () ->
     if t.getTime() < c.getTime()
       if parseInt(e) > 1
         r.innerHTML = "Faltam " + h + " dias para a Copa"
-      else r.innerHTML = "Amanh&atilde; come&ccedil;a a Copa!"  if parseInt(e) is 1
+      else r.innerHTML = "Amanhã começa a Copa!"  if parseInt(e) is 1
     return
 
