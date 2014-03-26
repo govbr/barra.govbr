@@ -9,7 +9,7 @@ window._barrabrasil.copa_counter = () ->
     t = new Date()
     c = new Date(2014, 5, 12, 0, 0, 0)
     h = ""
-    e = String(Math.round(Math.abs((t.getTime() - c.getTime()) / (24 * 60 * 60 * 1000))))
+    e = String(Math.floor(Math.abs((t.getTime() - c.getTime()) / (24 * 60 * 60 * 1000))) + 1)
     a = (e).split("")
 
     i = 0
