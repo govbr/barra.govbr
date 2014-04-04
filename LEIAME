@@ -4,11 +4,26 @@ Como instalar
 
 Dependências:
 
+ 
  - Flask
+		# sudo pip install flask
  - assetgen
+		# sudo pip install assetgen
  - node.js
-   - coffeescript
-   - sass
+		# sudo apt-get install python-software-properties python g++ make
+		# sudo add-apt-repository ppa:chris-lea/node.js
+		# sudo apt-get update
+		# sudo apt-get install nodejs
+		# sudo apt-get install npm
+   - coffeescript 
+		# sudo npm install -g coffee-script
+   - sass 	
+		# sudo apt-get install ruby-full build-essential
+		# sudo apt-get install rubygems
+		# sudo gem install sass
+		# sass -v
+   - uglifyjs
+		# sudo npm install -g uglify-js
 
 Requisitos da Barra
 

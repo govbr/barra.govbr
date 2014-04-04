@@ -1,9 +1,9 @@
 #!/bin/sh
 echo ""
-echo ""
-if test -d "recipes/$1"
+if [ -n "$1" ] && test -d "recipes/$1"
 then
-    sh recipes/$1/compile.sh
+    cd recipes/$1
+    sh ./compile.sh
 else
     echo "Error. Profile $1 does not exist."
 fi
