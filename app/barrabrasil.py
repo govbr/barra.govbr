@@ -1,5 +1,5 @@
 from flask import Flask, url_for, render_template, request, Response, make_response
-import hashlib
+import hashlib,webbrowser
 app = Flask(__name__)
 
 @app.route('/')
@@ -34,4 +34,5 @@ if __name__ == '__main__':
         profile = argv[1]
     else:
         profile = 'default'
+    webbrowser.open("http://127.0.0.1:5000/",new=2)
     app.run(debug=False)
