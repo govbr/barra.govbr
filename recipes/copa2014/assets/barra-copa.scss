@@ -1,3 +1,6 @@
+$borderPadrao: 1px solid #d3a725;
+$widthPadrao: 960px;
+
 #barra-brasil {
   div, a, ul, li {
     margin: 0;
@@ -16,9 +19,7 @@
   font-size: 13px;
   line-height: 32px;
   font-family: "Open Sans",Arial,Helvetica,sans-serif;
-  border-bottom-style: solid;
-  border-bottom-color: hsl(45, 70%, 49%);
-  border-bottom-width: 1px;
+  border-bottom: $borderPadrao;
   a {
     text-decoration: none;
   }
@@ -37,7 +38,7 @@ div#wrapper-barra-brasil {
   overflow: hidden;
   margin: 0 auto;
   width: 100%;
-  max-width: 960px;
+  max-width: $widthPadrao;
 }
 
 #barra-brasil {
@@ -46,7 +47,7 @@ div#wrapper-barra-brasil {
     padding: 7px 0 6px;
     width: 116px;
     height: 19px;
-    border-right: 1px solid #d3a725;
+    border-right: $borderPadrao;
     .link-barra {
       display: block;
       padding-left: 42px;
@@ -59,7 +60,7 @@ div#wrapper-barra-brasil {
   .acesso-info {
     float: left;
     padding: 0 13px;
-    border-right: 1px solid #d3a725;
+    border-right: $borderPadrao;
   }
   .copa-counter {
     position: absolute;
@@ -87,13 +88,13 @@ div#wrapper-barra-brasil {
     float: left;
     padding: 0 13px;
     color: #138542;
-    border-right: 1px solid #d3a725;
+    border-right: $borderPadrao;
   }
   .list {
     position: absolute;
     top: 0;
     right: 0;
-    border-left: 1px solid #d3a725;
+    border-left: $borderPadrao;
     .first! {}
   }
   .list-item {
@@ -101,7 +102,7 @@ div#wrapper-barra-brasil {
     padding: 0 15px 0 14px;
     height: 32px;
     float: left;
-    border-right: 1px solid #d3a725;
+    border-right: $borderPadrao;
   }
   .list! .last {}
   .link-barra {
@@ -120,8 +121,8 @@ div#wrapper-barra-brasil {
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: $widthPadrao) {
   #wrapper-barra-brasil {
-    width: 960px;
+    width: $widthPadrao;
   }
 }
