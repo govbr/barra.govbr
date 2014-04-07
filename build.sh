@@ -1,10 +1,17 @@
 #!/bin/sh
 echo ""
-if [ -n "$1" ] && test -d "recipes/$1"
+if [ -n "$1" ]
 then
-    cd recipes/$1
+    profile=$1
+else
+    profile='default'
+fi
+
+if test -d "recipes/$1"
+then
+    cd recipes/$profile
     sh ./compile.sh
-    python ../../app/barrabrasil.py $1
+    python ../../app/barrabrasil.py $profile
 else
     echo "Error. Profile $1 does not exist."
 fi
