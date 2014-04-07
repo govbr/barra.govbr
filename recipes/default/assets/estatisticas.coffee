@@ -3,7 +3,7 @@
   tipo = document.createAttribute("type")
   tipo.nodeValue = "text/javascript"
   src = document.createAttribute("src")
-  src.nodeValue = "http://coletajavascript.serpro.gov.br/estatistica.js"
+  src.nodeValue = "//coletajavascript.serpro.gov.br/estatistica.js"
   novoScript.setAttributeNode tipo
   novoScript.setAttributeNode src
   head.appendChild novoScript
