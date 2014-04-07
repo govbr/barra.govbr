@@ -1,5 +1,6 @@
 from flask import Flask, url_for, render_template, request, Response, make_response
 import hashlib,webbrowser
+from sys import argv
 app = Flask(__name__)
 
 @app.route('/')
@@ -14,7 +15,7 @@ def pagina_teste():
         return make_response("<h1>403 Forbidden</h1>", 403)
 
 @app.route('/barra.js')
-def barra(profile='copa2014'):
+def barra():
     with app.open_resource('templates/%s/barra-brasil.js' % profile) as f:
         conteudo = f.read().decode('utf-8')
     etag = hashlib.sha1(conteudo.encode('utf-8')).hexdigest()
@@ -36,3 +37,4 @@ if __name__ == '__main__':
         profile = 'default'
     webbrowser.open("http://127.0.0.1:5000/",new=2)
     app.run(debug=False)
+
