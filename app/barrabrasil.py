@@ -1,4 +1,5 @@
 from flask import Flask, url_for, render_template, request, Response, make_response
+from config import Config
 import hashlib#,webbrowser
 
 # Criar Key e certificado
@@ -39,11 +40,9 @@ def barra():
     return resposta
 
 if __name__ == '__main__':
-    from sys import argv
-    if len(argv) > 1:
-        profile = argv[1]
-    else:
-        profile = 'default'
+    f = file('profile')
+    cfg = Config(f)
+    profile = cfg.profile
     #webbrowser.open("http://127.0.0.1:5000/",new=2)
     app.run(debug=False)
     #webbrowser.open("https://127.0.0.1:5000/",new=2)

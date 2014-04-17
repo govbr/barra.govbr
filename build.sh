@@ -12,7 +12,9 @@ then
     cd recipes/$profile
     sh ./compile.sh
     cd ../../app
-    python barrabrasil.py $profile
+    touch profile
+    echo 'profile :' $profile > profile
+    python barrabrasil.py 
 else
     echo "Error. Profile $1 does not exist."
 fi
