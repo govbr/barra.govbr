@@ -1,6 +1,6 @@
 from flask import Flask, url_for, render_template, request, Response, make_response
 from config import Config
-import hashlib#,webbrowser
+import hashlib
 
 # Criar Key e certificado
 # openssl genrsa 1024 > ssl.key
@@ -26,6 +26,9 @@ def pagina_teste():
 
 @app.route('/barra.js')
 def barra():
+    f = file('profile')
+    cfg = Config(f)
+    profile = cfg.profile
     with app.open_resource('templates/%s/barra-brasil.js' % profile) as f:
         conteudo = f.read().decode('utf-8')
     etag = hashlib.sha1(conteudo.encode('utf-8')).hexdigest()
@@ -40,10 +43,8 @@ def barra():
     return resposta
 
 if __name__ == '__main__':
-    f = file('profile')
-    cfg = Config(f)
-    profile = cfg.profile
-    #webbrowser.open("http://127.0.0.1:5000/",new=2)
+    import webbrowser
+    webbrowser.open("http://127.0.0.1:5000/",new=2)
     app.run(debug=False)
     #webbrowser.open("https://127.0.0.1:5000/",new=2)
     #app.run(debug=False,ssl_context=ctx)

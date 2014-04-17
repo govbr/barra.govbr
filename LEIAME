@@ -2,6 +2,11 @@ Projeto Barra Brasil Distribuída - Desenvolvimento
 
 Como instalar
 
+Mudando o profile
+
+	Altere o arquivo 'app/profile' para apontar para o novo profile
+		Exemplo: profile : copa2014
+
 Dependências:
 
  
