@@ -9,6 +9,9 @@ Dependências:
 		# sudo pip install flask
  - assetgen
 		# sudo pip install assetgen
+
+ - Config
+		# sudo pip install config
  - node.js
 		# sudo apt-get install python-software-properties python g++ make
 		# sudo add-apt-repository ppa:chris-lea/node.js
