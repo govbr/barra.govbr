@@ -1,5 +1,5 @@
 from flask import Flask, url_for, render_template, request, Response, make_response
-import hashlib,webbrowser
+import hashlib#,webbrowser
 
 # Criar Key e certificado
 # openssl genrsa 1024 > ssl.key
@@ -44,7 +44,7 @@ if __name__ == '__main__':
         profile = argv[1]
     else:
         profile = 'default'
-    webbrowser.open("http://127.0.0.1:5000/",new=2)
+    #webbrowser.open("http://127.0.0.1:5000/",new=2)
     app.run(debug=False)
     #webbrowser.open("https://127.0.0.1:5000/",new=2)
     #app.run(debug=False,ssl_context=ctx)
