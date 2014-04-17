@@ -26,7 +26,7 @@ def pagina_teste():
 
 @app.route('/barra.js')
 def barra():
-    f = file('profile')
+    f = app.open_resource('profile')
     cfg = Config(f)
     profile = cfg.profile
     with app.open_resource('templates/%s/barra-brasil.js' % profile) as f:
