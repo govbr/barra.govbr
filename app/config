@@ -1,0 +1,5 @@
+ADMINS : ['carlos.vieira@planejamento.gov.br', 'eduardo.saintclair@serpro.gov.br']
+server : '189.9.137.220'
+email : 'barra.erro@serpro.gov.br'
+subject : "Relatorio de problemas da barra-brasil"
+
