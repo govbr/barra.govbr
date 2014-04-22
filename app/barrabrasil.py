@@ -13,6 +13,15 @@ import hashlib
 
 app = Flask(__name__)
 
+if not app.debug: 
+	import logging
+	from logging.handlers import SMTPHandler
+	f = app.open_resource('config')
+	cfg = Config(f)
+	mail_handler = SMTPHandler(cfg.server, cfg.email, cfg.ADMINS, cfg.subject)
+   	mail_handler.setLevel(logging.ERROR)
+	app.logger.addHandler(mail_handler)
+
 @app.route('/')
 def pagina_teste():
     try:
