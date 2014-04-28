@@ -48,7 +48,7 @@ def barra():
         resposta = make_response(conteudo)
         resposta.set_etag(etag)
         resposta.headers['Content-type'] = 'application/javascript'
-    resposta.headers['Cache-control'] = 'max-age: 3600'
+    resposta.headers['Cache-control'] = 'max-age: 43200' #12 horas
     return resposta
 
 if __name__ == '__main__':
