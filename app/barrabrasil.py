@@ -48,13 +48,24 @@ def barra():
         resposta = make_response(conteudo)
         resposta.set_etag(etag)
         resposta.headers['Content-type'] = 'application/javascript'
-    resposta.headers['Cache-control'] = 'max-age: 43200' #12 horas
+    resposta.headers['Cache-control'] = 'max-age: 86400' #24 horas
+    resposta.headers['Last-Modified'] = 'Mon, 30 Sep 2013 19:08:30 GMT'
+    return resposta
+
+@app.route('/static/opensans-bold.woff')
+def fonte():
+    f = app.open_resource('static/opensans-bold.woff')
+    conteudo = f.read().decode('base64')
+    resposta = make_response(conteudo)
+    resposta.headers['Content-type'] = 'application/x-font-woff'
+    resposta.headers['Cache-control'] = 'max-age: 86400' #24 horas
+    resposta.headers['Last-Modified'] = 'Mon, 30 Sep 2013 19:08:30 GMT'
     return resposta
 
 if __name__ == '__main__':
     import webbrowser
     webbrowser.open("http://127.0.0.1:5000/",new=2)
-    app.run(debug=False)
+    app.run(debug=True)
     #webbrowser.open("https://127.0.0.1:5000/",new=2)
     #app.run(debug=False,ssl_context=ctx)
 

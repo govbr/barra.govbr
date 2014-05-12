@@ -1,0 +1,13 @@
+\n
+Comando: curl -w "@curl_time_total.txt" -o /dev/null -s http://barra.brasil.gov.br/barra.js > resultado.txt\n
+\n
+	      size_download:  %{size_download} bytes\n
+            time_namelookup:  %{time_namelookup} segundos\n
+               time_connect:  %{time_connect} segundos\n
+            time_appconnect:  %{time_appconnect} segundos\n
+           time_pretransfer:  %{time_pretransfer} segundos\n
+              time_redirect:  %{time_redirect} segundos\n
+         time_starttransfer:  %{time_starttransfer} segundos\n
+                            ----------\n
+                 time_total:  %{time_total} segundos\n
+\n
