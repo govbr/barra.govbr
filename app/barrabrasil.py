@@ -40,15 +40,15 @@ def barra():
     profile = cfg.profile
     with app.open_resource('templates/%s/barra-brasil.js' % profile) as f:
         conteudo = f.read().decode('utf-8')
-    etag = hashlib.sha1(conteudo.encode('utf-8')).hexdigest()
-    if request.if_none_match and \
-              etag in request.if_none_match:
-        resposta = Response(status=304)
-    else: # nao esta em cache do navegador
-        resposta = make_response(conteudo)
-        resposta.set_etag(etag)
-        resposta.headers['Content-type'] = 'application/javascript'
-    resposta.headers['Cache-control'] = 'max-age: 86400' #24 horas
+    #etag = hashlib.sha1(conteudo.encode('utf-8')).hexdigest()
+    #if request.if_none_match and \
+    #          etag in request.if_none_match:
+    #    resposta = Response(status=304)
+    #else: # nao esta em cache do navegador
+    resposta = make_response(conteudo)
+    #    resposta.set_etag(etag)
+    resposta.headers['Content-type'] = 'application/x-javascript'
+    resposta.headers['Cache-control'] = 'public, max-age: 86400' #24 horas
     resposta.headers['Last-Modified'] = 'Mon, 30 Sep 2013 19:08:30 GMT'
     return resposta
 
@@ -58,7 +58,7 @@ def fonte():
     conteudo = f.read().decode('base64')
     resposta = make_response(conteudo)
     resposta.headers['Content-type'] = 'application/x-font-woff'
-    resposta.headers['Cache-control'] = 'max-age: 86400' #24 horas
+    resposta.headers['Cache-control'] = 'public, max-age: 86400' #24 horas
     resposta.headers['Last-Modified'] = 'Mon, 30 Sep 2013 19:08:30 GMT'
     return resposta
 
