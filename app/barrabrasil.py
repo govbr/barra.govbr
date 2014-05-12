@@ -38,28 +38,32 @@ def barra():
     f = app.open_resource('profile')
     cfg = Config(f)
     profile = cfg.profile
+    data = cfg.date
     with app.open_resource('templates/%s/barra-brasil.js' % profile) as f:
         conteudo = f.read().decode('utf-8')
-    #etag = hashlib.sha1(conteudo.encode('utf-8')).hexdigest()
-    #if request.if_none_match and \
-    #          etag in request.if_none_match:
-    #    resposta = Response(status=304)
-    #else: # nao esta em cache do navegador
-    resposta = make_response(conteudo)
-    #    resposta.set_etag(etag)
+    etag = hashlib.sha1(conteudo.encode('utf-8')).hexdigest()
+    if request.if_none_match and \
+              etag in request.if_none_match:
+        resposta = Response(status=304)
+    else: # nao esta em cache do navegador
+        resposta = make_response(conteudo)
+        resposta.set_etag(etag)
     resposta.headers['Content-type'] = 'application/x-javascript'
     resposta.headers['Cache-control'] = 'public, max-age: 86400' #24 horas
-    resposta.headers['Last-Modified'] = 'Mon, 30 Sep 2013 19:08:30 GMT'
+    resposta.headers['Last-Modified'] = data
     return resposta
 
 @app.route('/static/opensans-bold.woff')
 def fonte():
+    f = app.open_resource('profile')
+    cfg = Config(f)
+    data = cfg.date
     f = app.open_resource('static/opensans-bold.woff')
     conteudo = f.read().decode('base64')
     resposta = make_response(conteudo)
     resposta.headers['Content-type'] = 'application/x-font-woff'
     resposta.headers['Cache-control'] = 'public, max-age: 86400' #24 horas
-    resposta.headers['Last-Modified'] = 'Mon, 30 Sep 2013 19:08:30 GMT'
+    resposta.headers['Last-Modified'] = data
     return resposta
 
 if __name__ == '__main__':
