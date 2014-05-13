@@ -32,6 +32,11 @@ Dependências:
 		# sass -v
    - uglifyjs
 		# sudo npm install -g uglify-js
+   - zlib
+
+Para profiling é necessário além dos acima
+
+   - werkzeug
 
 Requisitos da Barra
 
