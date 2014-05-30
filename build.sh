@@ -15,6 +15,7 @@ then
     touch profile
     echo 'profile :' $profile > profile
     echo 'date : "'$(date -R)'"'>> profile
+    cp templates/$profile/* static/ #Copiando enquanto a barra é estática.
     python barrabrasil.py 
 else
     echo "Error. Profile $1 does not exist."
