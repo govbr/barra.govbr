@@ -20,6 +20,7 @@ window._barrabrasil.copa_counter = () ->
     if t.getTime() < c.getTime()
       if parseInt(e) > 1
         r.innerHTML = "Faltam " + h + " dias para a Copa"
-      else r.innerHTML = "Amanh&atilde; come&ccedil;a a Copa!"  if parseInt(e) is 1
+      else r.innerHTML = "Amanh&atilde; come&ccedil;a a Copa!" if parseInt(e) is 1
+    else r.innerHTML = "#CopaDasCopas"
     return
 
