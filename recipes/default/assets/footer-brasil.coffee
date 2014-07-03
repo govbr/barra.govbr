@@ -1,6 +1,4 @@
-window.onload = ->
   divFooter = document.getElementById("footer-brasil")
-
   if divFooter
     divFooter.parentNode.removeChild(divFooter) 
     
@@ -39,21 +37,21 @@ window.onload = ->
   #    href.nodeValue = "http://189.9.137.173/estilo-barra.css";
   #    href.nodeValue = "static/estilo-barra.css"
 
-window._footerbrasil =
-  insere_css: (css) ->
-      style = document.createElement("style")
-      tipo = document.createAttribute("type")
-      tipo.nodeValue = "text/css"
-      media = document.createAttribute("media")
-      media.nodeValue = "all"
-      style.setAttributeNode tipo
-      style.setAttributeNode media
+  window._footerbrasil =
+    insere_css: (css) ->
+        style = document.createElement("style")
+        tipo = document.createAttribute("type")
+        tipo.nodeValue = "text/css"
+        media = document.createAttribute("media")
+        media.nodeValue = "all"
+        style.setAttributeNode tipo
+        style.setAttributeNode media
 
-      if style.styleSheet #Hack para IE8
-        style.styleSheet.cssText = css
-      else
-        style.appendChild document.createTextNode(css)
-      head = document.getElementsByTagName("head")[0]
-      head.appendChild style
+        if style.styleSheet #Hack para IE8
+          style.styleSheet.cssText = css
+        else
+          style.appendChild document.createTextNode(css)
+        head = document.getElementsByTagName("head")[0]
+        head.appendChild style
 
 
