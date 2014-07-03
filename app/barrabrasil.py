@@ -58,7 +58,6 @@ def barra():
     resposta.headers['Last-Modified'] = data
     return resposta
 
-
 if __name__ == '__main__':
     import webbrowser
     webbrowser.open("http://127.0.0.1:5000/",new=2)

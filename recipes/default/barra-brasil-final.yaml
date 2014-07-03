@@ -3,15 +3,15 @@
 
 generate:
 
-- barra-brasil-original.js:
+- barra-brasil.js:
     source:
-      - build/barra-brasil-1.js       # parte de comportamento
-      - build/barra-brasil-css.js   # codigo de insercao do css
+      - build/barra-brasil-original.js       # parte de comportamento
+      - build/footer-brasil.js       # parte de comportamento
     uglify.bin: uglifyjs
 
 css.embed: true
 css.embed.only: true
-output.directory: build
+output.directory: ../../app/templates/default
 output.hashed: false
 output.manifest: assets.json
 

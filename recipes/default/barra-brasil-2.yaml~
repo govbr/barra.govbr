@@ -11,7 +11,7 @@ generate:
 
 css.embed: true
 css.embed.only: true
-output.directory: build
+output.directory: ../../app/templates/default
 output.hashed: false
 output.manifest: assets.json
 

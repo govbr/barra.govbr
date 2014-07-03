@@ -3,10 +3,10 @@
 
 generate:
 
-- barra-brasil-original.js:
+- footer-brasil.js:
     source:
-      - build/barra-brasil-1.js       # parte de comportamento
-      - build/barra-brasil-css.js   # codigo de insercao do css
+      - build/footer-brasil.js       # parte de comportamento
+      - build/footer-brasil-css.js   # codigo de insercao do css
     uglify.bin: uglifyjs
 
 css.embed: true

@@ -1,18 +1,19 @@
   divBarra = document.getElementById("barra-brasil")
-  divBarra.parentNode.removeChild(divBarra) if divBarra
-  head = document.getElementsByTagName("head")[0]
-  body = document.getElementsByTagName("body")[0]
+  if divBarra
+    divBarra.parentNode.removeChild(divBarra)
+    head = document.getElementsByTagName("head")[0]
+    body = document.getElementsByTagName("body")[0]
 
-  link = document.createElement("link")
-  href = document.createAttribute("href")
+    link = document.createElement("link")
+    href = document.createAttribute("href")
 
-  novaDiv = document.createElement("div")
-  idNovaDiv = document.createAttribute("id")
-  idNovaDiv.nodeValue = "barra-brasil"
-  novaDiv.setAttributeNode idNovaDiv
+    novaDiv = document.createElement("div")
+    idNovaDiv = document.createAttribute("id")
+    idNovaDiv.nodeValue = "barra-brasil"
+    novaDiv.setAttributeNode idNovaDiv
   # conteudoBarra definido no barra-brasil-1.yaml e atribuido pelo assetgen
-  novaDiv.innerHTML = conteudoBarra
-  body.insertBefore(novaDiv, body.childNodes[0])
+    novaDiv.innerHTML = conteudoBarra
+    body.insertBefore(novaDiv, body.childNodes[0])
   
   #    src.nodeValue = "http://barra.brasil.gov.br/estilo-barra.css";
   #    href.nodeValue = "http://189.9.137.173/estilo-barra.css";
