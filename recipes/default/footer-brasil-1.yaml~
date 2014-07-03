@@ -4,29 +4,30 @@
 
 generate:
 
-- barra-brasil-1.js:
+- footer-brasil.js:
     source:
-      - assets/conteudo-barra.html
-      - assets/barra-brasil.coffee
-      - assets/estatisticas.coffee
-      - raw: "})();"  # fechamento do escopo da funcao anonima (ver template abaixo)
+      - assets/conteudo-footer.html
+      - assets/footer-brasil.coffee
+      - raw: "})()};"  # fechamento do escopo da funcao anonima (ver template abaixo)
     template: |
-        (function(){
-            var conteudoBarra = '${source|trim}';
+        window.onload = function (){(function(){
+            var conteudoFooter = '${source|trim}';
 
-- estilo-barra.css:
+- estilo-footer.css:
     source:
-      - assets/estilo-barra.scss
+      - assets/estilo-footer.scss
     depends:
       - assets/imagens/*
     embed.path.root: assets
     embed.url.base: imagens/
 
-- barra-brasil-css.js:
+- footer-brasil-css.js:
     source:
-      - build/estilo-barra.css
+      - build/estilo-footer.css
     template: |
-        window._barrabrasil.insere_css('${source|trim}');
+        window._footerbrasil.insere_css('${source|trim}');
+
+
 
 css.embed: true
 css.embed.only: true

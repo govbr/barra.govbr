@@ -9,9 +9,9 @@ generate:
       - assets/conteudo-barra.html
       - assets/barra-brasil.coffee
       - assets/estatisticas.coffee
-      - raw: "})();"  # fechamento do escopo da funcao anonima (ver template abaixo)
+      - raw: "})()};"  # fechamento do escopo da funcao anonima (ver template abaixo)
     template: |
-        (function(){
+        window.onload = function (){(function(){
             var conteudoBarra = '${source|trim}';
 
 - estilo-barra.css:
