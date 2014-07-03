@@ -23,19 +23,14 @@
         key = unescape(KeyVal[0])
         val = unescape(KeyVal[1])
         val = val.replace(/\+/g, " ")
-    list = ["azul", "amarelo", "verde", "branco"]
-    if val is "cor"
-      val = "verde"
-    if list.indexOf(val) is -1
-      val = "verde"
+# Transforma para verde caso não seja dito nenhuma cor ou a cor não seja padrão.
+    val = "verde" if val is "cor"
+    val = "verde" if val isnt "verde" and val isnt "azul" and val isnt "amarelo" and val isnt "branco"
 
     classNovaDiv = document.createAttribute("class")
     classNovaDiv.nodeValue = "footer-brasil-"+val
     novaDiv.setAttributeNode classNovaDiv
     body.insertBefore(novaDiv, body.lastChild)
-  #    src.nodeValue = "http://barra.brasil.gov.br/estilo-barra.css";
-  #    href.nodeValue = "http://189.9.137.173/estilo-barra.css";
-  #    href.nodeValue = "static/estilo-barra.css"
 
   window._footerbrasil =
     insere_css: (css) ->
