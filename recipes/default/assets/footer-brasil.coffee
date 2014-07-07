@@ -16,16 +16,15 @@
     myScript = scripts[ scripts.length - 1 ]
     query = myScript.src.replace(/^[^\?]+\??/,'')
     Pairs = query.split(/[;&]/)
-    val = "cor"
+# Transforma para verde caso não seja dito nenhuma cor ou a cor não seja padrão.
+    val = "verde"
     if Pairs.length is 1
       KeyVal = Pairs[0].split("=")
       if KeyVal.length is 2
         key = unescape(KeyVal[0])
         val = unescape(KeyVal[1])
         val = val.replace(/\+/g, " ")
-# Transforma para verde caso não seja dito nenhuma cor ou a cor não seja padrão.
-    val = "verde" if val is "cor"
-    val = "verde" if val isnt "verde" and val isnt "azul" and val isnt "amarelo" and val isnt "branco"
+        val = "verde" if val isnt "azul" and val isnt "amarelo" and val isnt "branco"
 
     classNovaDiv = document.createAttribute("class")
     classNovaDiv.nodeValue = "footer-brasil-"+val
