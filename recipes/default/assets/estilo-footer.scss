@@ -1,27 +1,4 @@
 
-@mixin footer-brasil($bgcolor) {
-	background: none repeat scroll 0% 0% $bgcolor;
-   padding: 1em 0px;
-   max-width: 100%;  
-}
-
-.footer-brasil-verde {
-	@include footer-brasil(#1A5027);
-}
-
-.footer-brasil-amarelo {
-	@include footer-brasil(#f5c516);
-}
-
-.footer-brasil-azul {
-	@include footer-brasil(#3b69b3);
-}
-
-.footer-brasil-branco {
-	@include footer-brasil(#FFF);
-}
-
-
 div#wrapper-footer-brasil {
     position: relative;
     overflow: hidden;
@@ -35,14 +12,6 @@ div#wrapper-footer-brasil {
     width: 107px;
     background: embed("imagens/acesso-a-informacao.png") center no-repeat;
     height: 49px;
-}
-
-div#wrapper-footer-brasil {
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 960px;
 }
 
 @media screen and (min-width: 960px) {
