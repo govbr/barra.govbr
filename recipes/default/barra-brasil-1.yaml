@@ -3,14 +3,16 @@
 # - gerar o css com as imagens incorporadas
 
 generate:
-
 - barra-brasil-1.js:
     source:
       - assets/conteudo-barra.html
       - assets/barra-brasil.coffee
-      - assets/estatisticas.coffee
+      - assets/estatisticas.coffee #Parte da estatistica do Piwik
       - raw: "})();"  # fechamento do escopo da funcao anonima (ver template abaixo)
     template: |
+        var _paq = _paq || [];
+         _paq.push(['trackPageView']);
+         _paq.push(['enableLinkTracking']);
         (function(){
             var conteudoBarra = '${source|trim}';
 
