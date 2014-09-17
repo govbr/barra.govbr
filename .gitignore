@@ -1,0 +1,20 @@
+# Edited files #
+################
+*~
+*.orig
+
+# Compiled source #
+###################
+*.pyc
+build/*
+.sass-cache/*
+assets.json
+app/templates/*
+
+# Arquivos especificos #
+########################
+app/profile
+app/static/*.js
+test/*.jtl
+test/resultado.txt
+
