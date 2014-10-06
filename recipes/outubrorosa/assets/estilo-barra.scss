@@ -1,0 +1,108 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Css reset mínimo */
+#barra-brasil {
+  div, a, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+  }
+}
+
+#barra-brasil ul {
+  list-style: none;
+}
+
+/* Css específico */
+
+/*   web font   */
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url("//barra.brasil.gov.br/static/opensans-bold.woff") format("woff");
+}
+
+/*  fim da web font   */
+
+#barra-brasil {
+    height: 32px;
+    background: #C1506E;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 32px;
+    font-family: "Open Sans",Arial,Helvetica,sans-serif;
+    a {
+        text-decoration: none;
+    }
+	 border-bottom: 1px solid #dfdfdf;
+}
+
+div#wrapper-barra-brasil {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+	 height: 100%;
+}
+
+#barra-brasil .brasil-flag {
+    float: left;
+    padding: 7px 0 6px;
+    width: 115px;
+    height: 19px;
+    border-right: 2px solid #dfdfdf;
+}
+
+#barra-brasil .brasil-flag .link-barra {
+    display: block;
+    padding-left: 42px;
+    width: 43px;
+    background: embed("imagens/bandeira-brasil.png") 8px center no-repeat;
+    text-transform: uppercase;
+    line-height: 19px;
+}
+
+#barra-brasil .acesso-info {
+    position: absolute;
+    left: 130px;
+}
+
+#barra-brasil .hashtag-barra-brasil {
+	color: #FFFBA2;
+	padding-left: 42px;
+}
+
+#barra-brasil .list {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#barra-brasil .list .first { border-left: 2px solid #dfdfdf; }
+
+#barra-brasil .list-item {
+    display: inline-block;
+    padding: 0 15px 0 13px;
+    height: 32px;
+    border-right: 2px solid #dfdfdf;
+}
+
+#barra-brasil .link-barra { color: #FFF; }
+
+@media screen and (max-width: 668px)  {
+    #barra-brasil .list { top: -100px; }
+}
+
+@media screen and (min-width: 960px) {
+    #wrapper-barra-brasil { width: 960px; }
+}
+
