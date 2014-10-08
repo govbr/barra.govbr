@@ -1,11 +1,13 @@
 # Barra.gov.br
 
+Barra dinâmica do governo brasileiro. Nesse projeto está incluído o código da barra e do rodapé de governo.
 
-Barra dinâmica do governo brasileiro
 
+# Captura de tela da barra/rodapé
 
-# Como gerar a barra
+![Barra e rodapé da identidade do governo brasileiro.](/doc/barra-printscreen.png)
 
+# Como gerar a barra/rodapé
 
 ## Mudando o profile
 
@@ -80,9 +82,11 @@ Se não for especificado nenhum _profile_ o profile _default_ será selecionado.
 
 >Navegadores de dispositivos móveis
 
-5. A Barra deve degradar graciosamente (graceful degradation ou progressive enhancement) clientes que não possuam compatibilidade ou no qual o javascript esteja desligado
+5. A Barra deve degradar graciosamente (graceful degradation ou progressive enhancement) clientes que não possuam compatibilidade ou no qual o javascript esteja desligado.
 
 6. A barra deve ser acessível.
+
+7. A Barra deve conter tanto o rodapé como a barra.
 
 # Considerações sobre a arquitetura
 -----
@@ -91,3 +95,4 @@ Se não for especificado nenhum _profile_ o profile _default_ será selecionado.
 
 2. A barra será incluída via javascript minificado.
 
+3. O rodapé será incluído via javascript minificado.
