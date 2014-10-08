@@ -1,6 +1,6 @@
   divFooter = document.getElementById("footer-brasil")
   if divFooter
-    divFooter.innerHTML += conteudoFooter
+    divFooter.innerHTML = conteudoFooter
     
   window._footerbrasil =
     insere_css: (css) ->
