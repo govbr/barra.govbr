@@ -5,6 +5,10 @@
 * Retirada da chamada do estatística do SERPRO para PWIKI [caduvieira]
 * O footer está substituindo ao invés de acrescentando o HTML [caduvieira]
 
+# 2.0.1
+
+* Correção do link da hash tag para o link direto da campanha do outubro rosa. [caduvieira]
+
 # 2.0
 
 * Alteração da cor de background para outubro rosa. [caduvieira]
