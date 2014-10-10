@@ -2,7 +2,6 @@
 
 # 2.1 (unreleased)
 
-* Retirada da chamada do estatística do SERPRO para PWIKI [caduvieira]
 * O footer está substituindo ao invés de acrescentando o HTML [caduvieira]
 
 # 2.0.1
