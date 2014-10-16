@@ -70,15 +70,16 @@ Se não for especificado nenhum _profile_ o profile _default_ será selecionado.
 2. A Barra deve suportar diferentes opções de cor de fundo
 3. A Barra deve suportar a inclusão dinâmica do nome da organização
 4. A Barra deve funcionar nos navegadores: 
+
 >Internet Explorer versão 8 ou superior
 
->Mozilla Firefox versão _a definir_
+>Mozilla Firefox versão 24
 
->Google Chrome versão _a definir_
+>Google Chrome versão C30
 	
->Safari versão _a definir_
+>Safari versão S6
 
->Opera versão _a definir_
+>Opera versão 12
 
 >Navegadores de dispositivos móveis
 
