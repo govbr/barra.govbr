@@ -7,6 +7,7 @@
 # 2.0.2
 
 * Remoção da chamada ao estatística do SERPRO a pedido do próprio SERPRO pois eles informaram que não tem parque computacional para dar suporte. [caduvieira]
+* Agora a barra não remove mais o id 'barra-brasil' e cria outro. Agora o HTML interno da div barra-brasil é substituído pelo HTML da barra para dar suporte as atalhos de acessibilidade. [caduvieira]
 
 # 2.0.1
 
