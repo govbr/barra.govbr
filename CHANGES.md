@@ -4,6 +4,10 @@
 
 * O footer está substituindo ao invés de acrescentando o HTML [caduvieira]
 
+# 2.0.2
+
+* Remoção da chamada ao estatística do SERPRO a pedido do próprio SERPRO pois eles informaram que não tem parque computacional para dar suporte. [caduvieira]
+
 # 2.0.1
 
 * Correção do link da hash tag para o link direto da campanha do outubro rosa. [caduvieira]

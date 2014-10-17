@@ -1,23 +1,9 @@
   divBarra = document.getElementById("barra-brasil")
   if divBarra
-    divBarra.parentNode.removeChild(divBarra)
-    head = document.getElementsByTagName("head")[0]
-    body = document.getElementsByTagName("body")[0]
-
-    link = document.createElement("link")
-    href = document.createAttribute("href")
-
-    novaDiv = document.createElement("div")
-    idNovaDiv = document.createAttribute("id")
-    idNovaDiv.nodeValue = "barra-brasil"
-    novaDiv.setAttributeNode idNovaDiv
+    divBarra.removeAttribute "style"
   # conteudoBarra definido no barra-brasil-1.yaml e atribuido pelo assetgen
-    novaDiv.innerHTML = conteudoBarra
-    body.insertBefore(novaDiv, body.childNodes[0])
-  
-  #    src.nodeValue = "http://barra.brasil.gov.br/estilo-barra.css";
-  #    href.nodeValue = "http://189.9.137.173/estilo-barra.css";
-  #    href.nodeValue = "static/estilo-barra.css"
+    divBarra.innerHTML = conteudoBarra
+
   window._barrabrasil =
     insere_css: (css) ->
         style = document.createElement("style")
@@ -32,6 +18,7 @@
             style.styleSheet.cssText = css
         else
             style.appendChild document.createTextNode(css)
-        
+
+        head = document.getElementsByTagName("head")[0]        
         head.appendChild style
 
