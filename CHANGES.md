@@ -4,6 +4,10 @@
 
 * O footer está substituindo ao invés de acrescentando o HTML [caduvieira]
 
+# 2.0.3
+
+* Remoção da barra de outubro rosa. Não haverá barra para novembro azul pois o INCA não endossa. [caduvieira]
+
 # 2.0.2
 
 * Remoção da chamada ao estatística do SERPRO a pedido do próprio SERPRO pois eles informaram que não tem parque computacional para dar suporte. [caduvieira]
