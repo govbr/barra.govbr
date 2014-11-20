@@ -7,6 +7,11 @@ Barra dinâmica do governo brasileiro. Nesse projeto está incluído o código d
 
 ![Barra e rodapé da identidade do governo brasileiro.](/doc/barra-printscreen.png)
 
+# Exemplo de uso da barra/rodapé
+
+O exemplo de como utilizar a barra no seu sítio está publicado em [Manual da Barra do Governo Brasileiro](http://epwg.governoeletronico.gov.br/barra/). 
+Você pode contribuir e melhorar o exemplo no [Código do Manual da Barra do Governo Brasileiro](http://github.com/govbr/brasil.gov.manualbarra/).
+
 # Como gerar a barra/rodapé
 
 ## Mudando o profile
@@ -97,3 +102,5 @@ Se não for especificado nenhum _profile_ o profile _default_ será selecionado.
 2. A barra será incluída via javascript minificado.
 
 3. O rodapé será incluído via javascript minificado.
+
+
