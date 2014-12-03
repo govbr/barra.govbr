@@ -9,11 +9,11 @@
     insere_css: (css) ->
         style = document.createElement("style")
         tipo = document.createAttribute("type")
-        tipo.nodeValue = "text/css"
+        tipo.value = "text/css"
         media = document.createAttribute("media")
-        media.nodeValue = "all"
-        style.setAttributeNode tipo
-        style.setAttributeNode media
+        media.value = "all"
+        style.setAttributeNode tipo #Para IE8. Quando suporte cair utilizar setAttribute "type","text/css"
+        style.setAttributeNode media #Para IE8. Quando suporte cair utilizar setAttribute "media","all"
         
         if style.styleSheet #Hack para IE8
             style.styleSheet.cssText = css

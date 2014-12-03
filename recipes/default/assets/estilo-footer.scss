@@ -1,4 +1,3 @@
-
 div#wrapper-footer-brasil {
     position: relative;
     overflow: hidden;
@@ -6,14 +5,18 @@ div#wrapper-footer-brasil {
     width: 100%;
     max-width: 960px;
 }
-
 #wrapper-footer-brasil .logo-acesso-footer {
     float: left;
     width: 107px;
     background: embed("imagens/acesso-a-informacao.png") center no-repeat;
     height: 49px;
 }
-
+#wrapper-footer-brasil .logo-brasil-footer {
+    float: right;
+    width: 153px;
+    background: embed("imagens/brasil.png") center no-repeat;
+    height: 49px;
+}
 @media screen and (min-width: 960px) {
     #wrapper-footer-brasil { width: 960px; }
 }

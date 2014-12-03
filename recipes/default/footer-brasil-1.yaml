@@ -4,7 +4,7 @@
 
 generate:
 
-- footer-brasil.js:
+- footer-brasil-1.js:
     source:
       - assets/conteudo-footer.html
       - assets/footer-brasil.coffee
@@ -26,8 +26,6 @@ generate:
       - build/estilo-footer.css
     template: |
         window._footerbrasil.insere_css('${source|trim}');
-
-
 
 css.embed: true
 css.embed.only: true
