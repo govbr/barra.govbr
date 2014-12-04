@@ -9,7 +9,8 @@ Barra dinâmica do governo brasileiro. Nesse projeto está incluído o código d
 
 # Exemplo de uso da barra/rodapé
 
-O exemplo de como utilizar a barra no seu sítio está publicado em [Manual da Barra do Governo Brasileiro](http://epwg.governoeletronico.gov.br/barra/). 
+O exemplo de como utilizar a barra no seu sítio está publicado em [Manual da Barra do Governo Brasileiro](http://barra.governoeletronico.gov.br/).
+A página de testes está disponível em [Teste da Barra do Governo Brasileiro](http://barra.governoeletronico.gov.br/teste/).
 Você pode contribuir e melhorar o exemplo no [Código do Manual da Barra do Governo Brasileiro](http://github.com/govbr/brasil.gov.manualbarra/).
 
 # Como gerar a barra/rodapé
