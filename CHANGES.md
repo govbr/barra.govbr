@@ -1,8 +1,9 @@
 # Histórico de Alterações
 
-# 2.1 (unreleased)
+# 2.1.0
 
 * O footer está substituindo ao invés de acrescentando o HTML [caduvieira]
+* Implementação do footer dinâmico [caduvieira]
 
 # 2.0.3
 
