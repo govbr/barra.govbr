@@ -1,5 +1,9 @@
 # Histórico de Alterações
 
+# 2.1.1
+
+* Adicionando o charset para o exemplo a pedido do SERPRO [caduvieira]
+
 # 2.1.0
 
 * O footer está substituindo ao invés de acrescentando o HTML [caduvieira]
