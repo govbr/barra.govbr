@@ -93,8 +93,58 @@ div#wrapper-barra-brasil {
 
 #barra-brasil .link-barra { color: #606060; }
 
-@media screen and (max-width: 668px)  {
-    #barra-brasil .list { top: -100px; }
+#menu-icon {
+  
+	display: hidden;
+	width: 59px;
+	height: 28px;
+	background: embed("imagens/menu.svg") no-repeat center;
+
+}
+
+a:hover#menu-icon {
+
+	background-color: #444;
+	border-radius: 4px 4px 0 0;
+
+}
+
+
+
+@media only screen and (max-width: 668px)  {
+    #barra-brasil #menu-icon { display:inline-block;  float: right;}
+
+	#barra-brasil nav ul, #barra-brasil nav:active ul { 
+		display: none;
+		position: absolute;
+		padding: 0;
+		background: #fff;
+		width: 50%;
+	}
+
+	#barra-brasil .list-item {
+		 display: inline-block;
+		 height: 28px;
+		 padding: 0;
+       border: 2px solid #dfdfdf;
+	}
+
+	#barra-brasil nav li{
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+
+	}
+
+	#barra-brasil nav:hover ul {
+		display: block;
+	}
+	div#wrapper-barra-brasil {
+		 overflow: visible;
+	}
+
 }
 
 @media screen and (min-width: 960px) {
