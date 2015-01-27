@@ -106,7 +106,8 @@ a:hover#menu-icon {
 }
 
 @media only screen and (max-width: 959px)  {
-   #barra-brasil #menu-icon { display:inline-block;  float: right; padding-top: 8px;}
+   #barra-brasil #menu-icon { display:inline-block;  float: right; padding-top: 8px;     margin: 5px;
+    background-size: 70%;}
 
 	#barra-brasil nav ul, #barra-brasil nav:active ul { 
 		display: none;
@@ -117,7 +118,13 @@ a:hover#menu-icon {
 	}
 
 	#barra-brasil .list {
-		 top: 22px;
+	    top: 32px;
+	    background: #EEE;
+	    width: auto;
+	}
+
+	#barra-brasil .list a:hover li {
+   	 background: #DDD;
 	}
 
 	#barra-brasil .list-item {
