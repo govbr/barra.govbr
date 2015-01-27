@@ -1,16 +1,122 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg id="svg3094" xmlns="http://www.w3.org/2000/svg" height="28.437" width="41.858" version="1.1">
- <g id="layer1" transform="translate(-.34454 -9.7814)">
-  <g id="g3063" transform="matrix(1.337 0 0 1.337 -458.2 -317.21)" fill="#606060">
-   <g id="g9953" transform="matrix(1.6221 0 0 1.6221 565.66 130.31)">
-    <rect id="rect9955" style="color:#000000" rx="1" ry="1" height="2.4506" width="18.379" y="70.907" x="-136.82" fill="#606060"/>
-   </g>
-   <g id="g9965" transform="matrix(1.1723 0 0 1.1723 512.38 176.36)">
-    <rect id="rect9967" style="color:#000000" rx="1.3837" ry="1.3837" height="3.3909" width="25.431" y="72.306" x="-143.87" fill="#606060"/>
-   </g>
-   <g id="g9979" transform="matrix(1.6221 0 0 1.6221 565.66 138.21)">
-    <rect id="rect9981" style="color:#000000" rx="1" ry="1" height="2.4506" width="18.379" y="70.907" x="-136.82" fill="#606060"/>
-   </g>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg3094"
+   height="28.437"
+   width="41.858"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="menu.svg"
+   inkscape:export-filename="/home/carlos/projetos/brasil.gov.barra/recipes/default/assets/imagens/menu.png"
+   inkscape:export-xdpi="88.616943"
+   inkscape:export-ydpi="88.616943">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs13" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1615"
+     inkscape:window-height="1026"
+     id="namedview11"
+     showgrid="false"
+     inkscape:zoom="21.623026"
+     inkscape:cx="14.074272"
+     inkscape:cy="12.730418"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g3063" />
+  <g
+     id="layer1"
+     transform="translate(-.34454 -9.7814)"
+     style="fill:#b4b4b4;fill-opacity:1;stroke:none;stroke-opacity:1"
+     inkscape:export-xdpi="81"
+     inkscape:export-ydpi="81">
+    <g
+       id="g3063"
+       transform="matrix(1.337 0 0 1.337 -458.2 -317.21)"
+       fill="#606060"
+       style="fill:#b4b4b4;fill-opacity:1;stroke:none;stroke-opacity:1">
+      <g
+         id="g9953"
+         transform="matrix(1.6221 0 0 1.6221 565.66 130.31)"
+         style="fill:#6e6e6e;fill-opacity:1;stroke:none;stroke-opacity:1">
+        <rect
+           id="rect9955"
+           style="color:#000000;fill:#6e6e6e;fill-opacity:1;stroke:none;stroke-opacity:1"
+           rx="1"
+           ry="1"
+           height="2.4506"
+           width="18.379"
+           y="70.907"
+           x="-136.82"
+           fill="#606060" />
+      </g>
+      <g
+         id="g9965"
+         transform="matrix(1.1723 0 0 1.1723 512.38 176.36)"
+         style="fill:#6e6e6e;fill-opacity:1;stroke:none;stroke-opacity:1">
+        <rect
+           id="rect9967"
+           style="color:#000000;fill:#6e6e6e;fill-opacity:1;stroke:none;stroke-opacity:1"
+           rx="1.3837"
+           ry="1.3837"
+           height="3.3909"
+           width="25.431"
+           y="72.306"
+           x="-143.87"
+           fill="#606060" />
+      </g>
+      <g
+         id="g9979"
+         transform="matrix(1.6221 0 0 1.6221 565.66 138.21)"
+         style="fill:#6e6e6e;fill-opacity:1;stroke:none;stroke-opacity:1">
+        <rect
+           id="rect9981"
+           style="color:#000000;fill:#6e6e6e;fill-opacity:1;stroke:none;stroke-opacity:1"
+           rx="1"
+           ry="1"
+           height="2.4506"
+           width="18.379"
+           y="70.907"
+           x="-136.82"
+           fill="#606060" />
+      </g>
+    </g>
   </g>
- </g>
 </svg>
