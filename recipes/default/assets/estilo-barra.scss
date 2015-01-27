@@ -107,11 +107,15 @@ div#wrapper-barra-brasil {
 		padding: 5px;
 	}
 
-	#barra-brasil nav:hover #menu-icon, #barra-brasil nav:active #menu-icon {
+	#barra-brasil nav:hover #menu-icon,
+	#barra-brasil nav:active #menu-icon,
+	#barra-brasil nav:focus #menu-icon {
 		background-color: #DDD;
 	}
 
-	#barra-brasil ul.list, #barra-brasil ul.list:active {
+	#barra-brasil ul.list,
+	#barra-brasil ul.list:active,
+	#barra-brasil ul.list:focus {
 		overflow: hidden;
 		height: 0px;
 		transition: 0.3s;
@@ -128,10 +132,14 @@ div#wrapper-barra-brasil {
        		border: 1px solid #dfdfdf;
 	}
 
+	#barra-brasil .list a:active li,
+	#barra-brasil .list a:focus li,
 	#barra-brasil .list a:hover li {
    	 background: #DDD;
 	}
 
+	#barra-brasil nav:active ul.list,
+	#barra-brasil nav:focus ul.list,
 	#barra-brasil nav:hover ul.list {
 		height: 150px;
 		transition: 0.5s;
