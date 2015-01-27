@@ -8,7 +8,6 @@
   div, a, ul, li {
     margin: 0;
     padding: 0;
-    border: 0;
     font-size: 100%;
     font-family: inherit;
     vertical-align: baseline;
@@ -96,53 +95,46 @@ div#wrapper-barra-brasil {
 #menu-icon {
 	display: hidden;
 	width: 35px;
-	height: 23px;
-	background: embed("imagens/menu.png") no-repeat center;
-}
-
-a:hover#menu-icon {
-	background-color: #dfdfdf;
-	border-radius: 4px 4px 0 0;
+	height: 22px;
+	background: #f1f1f1 embed("imagens/menu.png") no-repeat center;
+	border-bottom: 1px solid #DFDFDF;
 }
 
 @media only screen and (max-width: 959px)  {
-   #barra-brasil #menu-icon { display:inline-block;  float: right; margin: 5px;
-    background-size: 70%;}
-
-	#barra-brasil nav ul, #barra-brasil nav:active ul { 
-		display: none;
-		position: absolute;
-		padding: 0;
-		background: #fff;
-		width: 50%;
+	#barra-brasil #menu-icon {
+		display:inline-block;
+		float: right;
+		padding: 5px;
 	}
 
-	#barra-brasil .list {
-	    top: 24px;
-	    background: #EEE;
-	    width: auto;
+	#barra-brasil nav:hover #menu-icon, #barra-brasil nav:active #menu-icon {
+		background-color: #DDD;
+	}
+
+	#barra-brasil ul.list, #barra-brasil ul.list:active {
+		overflow: hidden;
+		height: 0px;
+		transition: 0.3s;
+		padding-top: 32px;
+		width: auto;
+	}
+
+	#barra-brasil .list-item {
+		display: block;
+		text-align: center;
+		height: 30px;
+		background: #EEE;
+		padding: 0 15px;
+       		border: 1px solid #dfdfdf;
 	}
 
 	#barra-brasil .list a:hover li {
    	 background: #DDD;
 	}
 
-	#barra-brasil .list-item {
-		 display: inline-block;
-		 height: 28px;
-		 padding: 0;
-       border: 2px solid #dfdfdf;
-	}
-
-	#barra-brasil nav li{
-		text-align: center;
-		width: 100%;
-		padding: 10px 0;
-		margin: 0;
-	}
-
-   #barra-brasil nav:hover ul{
-		display: block;
+	#barra-brasil nav:hover ul.list {
+		height: 150px;
+		transition: 0.5s;
 	}
 
 	div#wrapper-barra-brasil {
