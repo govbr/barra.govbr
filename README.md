@@ -29,9 +29,10 @@ Esses são comandos exemplos, por favor verifique no seu sistema como deve ser i
 		pip install flask
  * assetgen
 		pip install assetgen
-
  * config
 		pip install config
+ * tavutil
+		pip install tavutil
 
  * node.js
 		apt-get install python-software-properties python g++ make
@@ -51,7 +52,7 @@ Esses são comandos exemplos, por favor verifique no seu sistema como deve ser i
 
  * uglifyjs
 		npm install -g uglify-js
-
+		(Debian ou Ubuntu: apt-get install node-uglify)
  * zlib
 
 
