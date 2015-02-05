@@ -38,6 +38,12 @@ Para profiling é necessário além dos acima
 
    - werkzeug
 
+Usando vagrant:
+
+vagrant up
+vagrant ssh
+cd /vagrant/
+ 
 Requisitos da Barra
 
 1. A Barra deve ser adaptável a um desenho fluído e fixo

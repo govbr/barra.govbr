@@ -60,6 +60,14 @@ Para profiling é necessário além dos acima:
 
    * werkzeug
   
+
+## Usando vagrant:
+
+```
+vagrant up
+vagrant ssh
+cd /vagrant/
+```
  
 ## Geração da barra
 

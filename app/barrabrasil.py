@@ -61,7 +61,7 @@ def barra():
 if __name__ == '__main__':
     import webbrowser
     webbrowser.open("http://127.0.0.1:5000/",new=2)
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)
     #webbrowser.open("https://127.0.0.1:5000/",new=2)
     #app.run(debug=False,ssl_context=ctx)
 
