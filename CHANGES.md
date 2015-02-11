@@ -1,5 +1,10 @@
 # Histórico de Alterações
 
+# 2.1.2
+
+* Menu dropdown para telas abaixo de 900px #3 [caduvieira,valessiobrito]
+* Adicionado link para campanha do guia de serviços #5 [erickpintor]
+
 # 2.1.1
 
 * Adicionando o charset para o exemplo a pedido do SERPRO [caduvieira]
