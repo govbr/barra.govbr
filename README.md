@@ -58,8 +58,21 @@ Esses são comandos exemplos, por favor verifique no seu sistema como deve ser i
 
 Para profiling é necessário além dos acima:
 
-   * werkzeug
-  
+ * werkzeug
+
+Para testes headless é necessário também:
+
+ * mocha
+		npm install mocha
+
+ * chai
+		npm install chai
+
+ * ejs
+		npm install ejs
+
+ * zombie
+		npm install zombie
 
 ## Usando vagrant:
 
@@ -77,6 +90,11 @@ Execute o comando:
 
 Se não for especificado nenhum _profile_ o profile _default_ será selecionado.
 
+## Testes da barra
+
+Execute o comando dentro do diretório 'test':
+
+>    mocha zombie-test.js
 
 # Requisitos da Barra
 ----

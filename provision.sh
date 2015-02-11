@@ -18,6 +18,10 @@ pip install \
 
 npm install -g \
   coffee-script \
-  uglify-js
+  uglify-js \
+  ejs \
+  zombie \
+  mocha \
+  chai
 
 gem install sass
