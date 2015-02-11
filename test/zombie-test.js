@@ -6,24 +6,16 @@ describe("Testes de conteúdo de HTML da barra", function() {
 	var server, browser, barraUrl;
 	barraUrl = "http://localhost:3000/";
 	before(function() {
-		// before ALL the tests, start our node server (on a test port, 3001)
-
 		server = app.listen(3000);
 	});
 
 	beforeEach(function() {
-		// before EACH test, create a new zombie browser
-		// 
-		// some useful options when things go wrong:
-		// debug: true  =  outputs debug information for zombie
-		// waitDuration: 500  =  will only wait 500 milliseconds
-		//   for the page to load before moving on
 		browser = new Browser();
       browser.runScripts = true;
 	});
 
 	after(function() {
-		// after ALL the tests, close the server
+		// depois dos testes fechar o servidor
 		server.close();
 	});
 
