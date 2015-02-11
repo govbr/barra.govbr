@@ -19,6 +19,7 @@ pip install \
 npm install -g \
   coffee-script \
   uglify-js \
+  express \
   ejs \
   zombie \
   mocha \

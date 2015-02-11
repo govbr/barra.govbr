@@ -71,6 +71,9 @@ Para testes headless é necessário também:
  * ejs
 		npm install ejs
 
+ * express
+		npm install express
+
  * zombie
 		npm install zombie
 
