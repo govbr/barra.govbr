@@ -31,7 +31,6 @@ describe("Testes de conteúdo de HTML da barra", function() {
 		browser.visit(barraUrl, function() {
 
          var inner_barra = browser.document.getElementById("barra-brasil");
-			console.log(inner_barra.classList);
 			expect(inner_barra.innerHTML).to.equal("<div id=\"wrapper-barra-brasil\"><div class=\"brasil-flag\"><a href=\"http://brasil.gov.br\" class=\"link-barra\">Brasil</a></div><span class=\"acesso-info\"><a href=\"http://brasil.gov.br/barra#acesso-informacao\" class=\"link-barra\">Acesso à informação</a></span><nav><a href=\"#\" id=\"menu-icon\"></a><ul class=\"list\"><a href=\"http://brasil.gov.br/barra#participe\" class=\"link-barra\"><li class=\"list-item first\">Participe</li></a><a href=\"http://www.servicos.gov.br/?pk_campaign=barrabrasil\" class=\"link-barra\"><li class=\"list-item\">Serviços</li></a><a href=\"http://www.planalto.gov.br/legislacao\" class=\"link-barra\"><li class=\"list-item\">Legislação</li></a><a href=\"http://brasil.gov.br/barra#orgaos-atuacao-canais\" class=\"link-barra\"><li class=\"list-item last last-item\">Canais</li></a></ul></nav></div>");
 			done();
 		});
