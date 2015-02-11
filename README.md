@@ -95,9 +95,9 @@ Se não for especificado nenhum _profile_ o profile _default_ será selecionado.
 
 ## Testes da barra
 
-Execute o comando dentro do diretório 'test':
+Execute o comando:
 
->    mocha zombie-test.js
+>    mocha 
 
 # Requisitos da Barra
 ----
