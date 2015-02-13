@@ -37,6 +37,11 @@ describe("Testes de conteúdo de HTML da barra", function() {
 
 			done();
 		});
-
 	});
+
+   it("a barra deve ter o css correto para visualizacao maior que 960px");
+
+   it("a barra deve ter o css correto para visualização menor que 960px");
+
+   it("o rodapé deve ter o css correto");
 });
