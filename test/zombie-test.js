@@ -1,3 +1,6 @@
+var chai = require("chai"), plugin = require("chai-jq");
+chai.use(plugin);
+
 var expect = require("chai").expect, assert = require("chai").assert,
 	Browser = require("zombie"),
 	app = require("./app");
@@ -11,7 +14,7 @@ describe("Testes de conteúdo de HTML da barra", function() {
 
 	beforeEach(function() {
 		browser = new Browser();
-      browser.runScripts = true;
+		browser.runScripts = true;
 	});
 
 	after(function() {
@@ -20,7 +23,7 @@ describe("Testes de conteúdo de HTML da barra", function() {
 	});
 
 	it("trocar o conteúdo do #barra-brasil pelo correto", function(done) {
-		browser.visit(barraUrl, function() {
+			browser.visit(barraUrl, function() {
 
          var inner_barra = browser.document.getElementById("barra-brasil");
 			expect(inner_barra.innerHTML).to.equal("<div id=\"wrapper-barra-brasil\"><div class=\"brasil-flag\"><a href=\"http://brasil.gov.br\" class=\"link-barra\">Brasil</a></div><span class=\"acesso-info\"><a href=\"http://brasil.gov.br/barra#acesso-informacao\" class=\"link-barra\">Acesso à informação</a></span><nav><a href=\"#\" id=\"menu-icon\"></a><ul class=\"list\"><a href=\"http://brasil.gov.br/barra#participe\" class=\"link-barra\"><li class=\"list-item first\">Participe</li></a><a href=\"http://www.servicos.gov.br/?pk_campaign=barrabrasil\" class=\"link-barra\"><li class=\"list-item\">Serviços</li></a><a href=\"http://www.planalto.gov.br/legislacao\" class=\"link-barra\"><li class=\"list-item\">Legislação</li></a><a href=\"http://brasil.gov.br/barra#orgaos-atuacao-canais\" class=\"link-barra\"><li class=\"list-item last last-item\">Canais</li></a></ul></nav></div>");
@@ -31,9 +34,9 @@ describe("Testes de conteúdo de HTML da barra", function() {
    it("trocar o conteúdo do #footer-brasil pelo correto", function(done) {
 		browser.visit(barraUrl, function() {
 
-         var inner_barra = browser.document.getElementById("footer-brasil");
-			assert(inner_barra.innerHTML === "<div id=\"wrapper-footer-brasil\"><a href=\"http://www.acessoainformacao.gov.br/\"><span class=\"logo-acesso-footer\"></span></a><a href=\"http://www.brasil.gov.br/\"><span class=\"logo-brasil-footer\"></span></a></div>",
-				"Conteúdo do#footer-brasil deve ser o provido pela barra.js");
+         var inner_footer = browser.document.getElementById("footer-brasil");
+			assert(inner_footer.innerHTML === "<div id=\"wrapper-footer-brasil\"><a href=\"http://www.acessoainformacao.gov.br/\"><span class=\"logo-acesso-footer\"></span></a><a href=\"http://www.brasil.gov.br/\"><span class=\"logo-brasil-footer\"></span></a></div>",
+				"Conteúdo do #footer-brasil deve ser o provido pela barra.js");
 
 			done();
 		});
@@ -43,5 +46,17 @@ describe("Testes de conteúdo de HTML da barra", function() {
 
    it("a barra deve ter o css correto para visualização menor que 960px");
 
-   it("o rodapé deve ter o css correto");
+   it("o rodapé deve ter o css correto", function(done) {
+		browser.visit(barraUrl, function() {
+         var $ = browser.window.$;
+
+         var logo_acesso_footer = $("#wrapper-footer-brasil a span");
+         expect(logo_acesso_footer).to.have.$class("logo-acesso-footer");
+
+         var logo_brasil_footer = $("#wrapper-footer-brasil a").next().children();
+         expect(logo_brasil_footer).to.have.$class("logo-brasil-footer");
+
+			done();
+		});
+	});
 });

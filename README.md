@@ -68,6 +68,9 @@ Para testes headless é necessário também:
  * chai
 		npm install chai
 
+ * chai-jq
+		npm install chai-jq
+
  * ejs
 		npm install ejs
 
