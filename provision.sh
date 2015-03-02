@@ -23,6 +23,7 @@ npm install -g \
   ejs \
   zombie \
   mocha \
-  chai
+  chai \
+  chai-jq
 
 gem install sass
