@@ -1,6 +1,6 @@
 # Barra.gov.br
 
-[![Join the chat at https://gitter.im/govbr/barra.govbr](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/govbr/barra.govbr?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Fale conosco https://gitter.im/govbr/barra.govbr](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/govbr/barra.govbr?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Barra dinâmica do governo brasileiro. Nesse projeto está incluído o código da barra e do rodapé de governo.
 
