@@ -122,6 +122,8 @@ div#wrapper-barra-brasil {
 		transition: 0.3s;
 		padding-top: 32px;
 		width: auto;
+		position: absolute;
+      z-index: 9;
 	}
 
 	#barra-brasil .list-item {
