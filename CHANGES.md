@@ -1,5 +1,10 @@
 # Histórico de Alterações
 
+# 2.1.3
+
+* Retirado nodeValue [caduvieira]
+* Adicionando position e z-index para o dropdown menu [caduvieira]
+
 # 2.1.2
 
 * Menu dropdown para telas abaixo de 900px #3 [caduvieira,valessiobrito]
