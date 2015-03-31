@@ -45,6 +45,10 @@
 	 box-sizing: content-box;
 }
 
+body.contraste #barra-brasil {
+	background: #000;
+}
+
 div#wrapper-barra-brasil {
     position: relative;
     overflow: hidden;
@@ -93,6 +97,8 @@ div#wrapper-barra-brasil {
 
 #barra-brasil .link-barra { color: #606060; }
 
+body.contraste #barra-brasil .link-barra { color: #FFF; }
+
 #menu-icon {
 	display: hidden;
 	width: 35px;
@@ -132,13 +138,23 @@ div#wrapper-barra-brasil {
 		height: 30px;
 		background: #EEE;
 		padding: 0 15px;
-       		border: 1px solid #dfdfdf;
+      border: 1px solid #dfdfdf;
+	}
+
+	body.contraste #barra-brasil .list-item {
+		background: #000;
 	}
 
 	#barra-brasil .list a:active li,
 	#barra-brasil .list a:focus li,
 	#barra-brasil .list a:hover li {
    	 background: #DDD;
+	}
+
+	body.contraste #barra-brasil .list a:active li,
+	body.contraste #barra-brasil .list a:focus li,
+	body.contraste #barra-brasil .list a:hover li {
+   	 background: #000;
 	}
 
 	#barra-brasil nav:active ul.list,

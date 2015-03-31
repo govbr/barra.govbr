@@ -4,6 +4,7 @@
 
 * Retirado nodeValue [caduvieira]
 * Adicionando position e z-index para o dropdown menu [caduvieira]
+* Adicionado suporte a alto contraste [caduvieira]
 
 # 2.1.2
 

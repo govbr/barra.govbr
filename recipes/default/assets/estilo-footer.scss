@@ -18,6 +18,9 @@ div#wrapper-footer-brasil {
     background: embed("imagens/brasil.png") center no-repeat;
     height: 48px;
 }
+body.contraste #footer-brasil {
+   background: #000;
+}
 @media screen and (min-width: 960px) {
     #wrapper-footer-brasil { width: 960px; }
 }
