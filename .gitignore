@@ -17,6 +17,7 @@ app/profile
 app/static/*.js
 test/*.jtl
 test/resultado.txt
+test-reports.xml
 
 # Vagrant files #
 ################
