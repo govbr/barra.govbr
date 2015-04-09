@@ -27,15 +27,6 @@ Altere o arquivo 'app/profile' para apontar para o novo profile. Exemplo:
 
 Esses são comandos exemplos, por favor verifique no seu sistema como deve ser instalado.
 
- * flask
-		pip install flask
- * assetgen
-		pip install assetgen
- * config
-		pip install config
- * tavutil
-		pip install tavutil
-
  * node.js
 		apt-get install python-software-properties python g++ make
 		add-apt-repository ppa:chris-lea/node.js
@@ -43,44 +34,25 @@ Esses são comandos exemplos, por favor verifique no seu sistema como deve ser i
 		apt-get install nodejs
 		apt-get install npm
 
- * coffeescript 
-		npm install -g coffee-script
-
  * sass
 		apt-get install ruby-full build-essential
 		apt-get install rubygems
 		gem install sass
 		sass -v
 
- * uglifyjs
-		npm install -g uglify-js
-		(Debian ou Ubuntu: apt-get install node-uglify)
  * zlib
 
+## Para criar o ambiente de desenvolvimento execute:
 
-Para profiling é necessário além dos acima:
+>		make venv 
+
+## Para profiling é necessário além dos acima:
 
  * werkzeug
 
-Para testes headless é necessário também:
+E execute o
 
- * mocha
-		npm install mocha
-
- * chai
-		npm install chai
-
- * chai-jq
-		npm install chai-jq
-
- * ejs
-		npm install ejs
-
- * express
-		npm install express
-
- * zombie
-		npm install zombie
+>     make profile
 
 ## Usando vagrant:
 
@@ -94,15 +66,19 @@ cd /vagrant/
 
 Execute o comando:
 
->    ./build.sh _profile_
+>    make run
 
-Se não for especificado nenhum _profile_ o profile _default_ será selecionado.
+O profile selecionado será o contido em _app/profile_
 
 ## Testes da barra
 
 Execute o comando:
 
->    mocha 
+>    make teste
+
+Para gerar um teste em XUNIT execute
+
+>    make testReport
 
 # Requisitos da Barra
 ----

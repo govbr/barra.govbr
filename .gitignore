@@ -20,5 +20,10 @@ test/resultado.txt
 test-reports.xml
 
 # Vagrant files #
-################
+#################
 .vagrant
+
+# Enviroment files #
+####################
+venv
+node_modules

@@ -1,0 +1,25 @@
+{
+"name": "BarraBrasil",
+"description": "Barra oficial do governo federal brasileiro",
+"version": "2.1.3",
+"engines": {
+"node": "~0.10"
+},
+"dependencies": {
+"jsdom": "3.1.2",
+"uglifyjs": "*",
+"coffee-script": "*",
+"express": "*",
+"chai": "*",
+"chai-jq": "*",
+"mocha": "*",
+"zombie": "*",
+"ejs": "*"
+},
+"optionalDependencies": {},
+"scripts": {
+"testReport": "./node_modules/.bin/mocha --timeout 30000 --recursive -R xunit test/ > test-reports.xml",
+"test": "./node_modules/.bin/mocha --timeout 30000 --recursive test/"
+}
+}
+
