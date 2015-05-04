@@ -125,7 +125,7 @@ body.contraste #barra-brasil .link-barra { color: #FFF !important; }
 	body.contraste #barra-brasil nav:hover #menu-icon,
 	body.contraste #barra-brasil nav:active #menu-icon,
 	body.contraste #barra-brasil nav:focus #menu-icon {
-		background-color: #000;
+		background-color: #000 !important;
 	}
 
 	#barra-brasil ul.list,
