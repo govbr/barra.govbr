@@ -19,7 +19,7 @@ div#wrapper-footer-brasil {
     height: 48px;
 }
 body.contraste #footer-brasil {
-   background: #000;
+   background: #000 !important;
 }
 @media screen and (min-width: 960px) {
     #wrapper-footer-brasil { width: 960px; }

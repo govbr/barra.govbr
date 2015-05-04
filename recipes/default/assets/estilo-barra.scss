@@ -46,7 +46,7 @@
 }
 
 body.contraste #barra-brasil {
-	background: #000;
+	background: #000 !important;
 }
 
 div#wrapper-barra-brasil {
@@ -97,7 +97,7 @@ div#wrapper-barra-brasil {
 
 #barra-brasil .link-barra { color: #606060; }
 
-body.contraste #barra-brasil .link-barra { color: #FFF; }
+body.contraste #barra-brasil .link-barra { color: #FFF !important; }
 
 #menu-icon {
 	display: hidden;
@@ -142,7 +142,7 @@ body.contraste #barra-brasil .link-barra { color: #FFF; }
 	}
 
 	body.contraste #barra-brasil .list-item {
-		background: #000;
+		background: #000 !important;
 	}
 
 	#barra-brasil .list a:active li,
@@ -154,7 +154,7 @@ body.contraste #barra-brasil .link-barra { color: #FFF; }
 	body.contraste #barra-brasil .list a:active li,
 	body.contraste #barra-brasil .list a:focus li,
 	body.contraste #barra-brasil .list a:hover li {
-   	 background: #000;
+   	 background: #000 !important;
 	}
 
 	#barra-brasil nav:active ul.list,
