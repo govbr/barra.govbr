@@ -3,6 +3,7 @@
 # 2.1.4
 
 * Adicionado !important para o alto contraste [caduvieira]
+* Modificando menu para CSS ao invés de imagem [caduvieira]
 
 # 2.1.3
 
