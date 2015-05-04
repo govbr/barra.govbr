@@ -101,9 +101,9 @@ body.contraste #barra-brasil .link-barra { color: #FFF !important; }
 
 #menu-icon {
   position: absolute;
-  top: 0.25em;
-  border-top: 1.2em double #999;
-  border-bottom: 0.4em solid #999;
+  top: 3px;
+  border-top: 15px double #606060;
+  border-bottom: 5px solid #606060;
   display: none;
   width: 20px;
   right: 5px;
@@ -112,7 +112,7 @@ body.contraste #barra-brasil .link-barra { color: #FFF !important; }
 @media only screen and (max-width: 959px)  {
 	#barra-brasil #menu-icon {
 		display:inline-block;
-		padding: 3px;
+		padding: 5px 3px 0px 3px;
 	}
 
 	#barra-brasil nav:hover #menu-icon,
@@ -124,7 +124,7 @@ body.contraste #barra-brasil .link-barra { color: #FFF !important; }
 	body.contraste #barra-brasil nav:hover #menu-icon,
 	body.contraste #barra-brasil nav:active #menu-icon,
 	body.contraste #barra-brasil nav:focus #menu-icon {
-		background-color: #999 !important;
+		background-color: #606060 !important;
 	}
 
 	#barra-brasil ul.list,
@@ -153,8 +153,8 @@ body.contraste #barra-brasil .link-barra { color: #FFF !important; }
 	}
 
 	body.contraste #menu-icon {
-		border-top: 1.2em double #fff !important;
-  		border-bottom: 0.4em solid #fff !important;
+		border-top: 15px double #fff !important;
+  		border-bottom: 5px solid #fff !important;
 	}
 
 	#barra-brasil .list a:active li,
@@ -166,7 +166,7 @@ body.contraste #barra-brasil .link-barra { color: #FFF !important; }
 	body.contraste #barra-brasil .list a:active li,
 	body.contraste #barra-brasil .list a:focus li,
 	body.contraste #barra-brasil .list a:hover li {
-   	 background: #999 !important;
+   	 background: #606060 !important;
 	}
 
 	#barra-brasil nav:active ul.list,
