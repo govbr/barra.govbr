@@ -20,6 +20,8 @@
 
 /* Css específico */
 
+$cor-link: #606060;
+
 /*   web font   */
 
 @font-face {
@@ -95,15 +97,15 @@ div#wrapper-barra-brasil {
     border-right: 2px solid #dfdfdf;
 }
 
-#barra-brasil .link-barra { color: #606060; }
+#barra-brasil .link-barra { color: $cor-link; }
 
 body.contraste #barra-brasil .link-barra { color: #FFF !important; }
 
 #menu-icon {
   position: absolute;
   top: 3px;
-  border-top: 15px double #606060;
-  border-bottom: 5px solid #606060;
+  border-top: 15px double $cor-link;
+  border-bottom: 5px solid $cor-link;
   display: none;
   width: 20px;
   right: 5px;
@@ -115,6 +117,8 @@ body.contraste #barra-brasil .link-barra { color: #FFF !important; }
 		padding: 5px 3px 0px 3px;
 	}
 
+	#barra-brasil .list .first { border-left: 1px solid #dfdfdf; }
+
 	#barra-brasil nav:hover #menu-icon,
 	#barra-brasil nav:active #menu-icon,
 	#barra-brasil nav:focus #menu-icon {
@@ -124,7 +128,7 @@ body.contraste #barra-brasil .link-barra { color: #FFF !important; }
 	body.contraste #barra-brasil nav:hover #menu-icon,
 	body.contraste #barra-brasil nav:active #menu-icon,
 	body.contraste #barra-brasil nav:focus #menu-icon {
-		background-color: #606060 !important;
+		background-color: $cor-link !important;
 	}
 
 	#barra-brasil ul.list,
@@ -166,7 +170,7 @@ body.contraste #barra-brasil .link-barra { color: #FFF !important; }
 	body.contraste #barra-brasil .list a:active li,
 	body.contraste #barra-brasil .list a:focus li,
 	body.contraste #barra-brasil .list a:hover li {
-   	 background: #606060 !important;
+   	 background: $cor-link !important;
 	}
 
 	#barra-brasil nav:active ul.list,
@@ -184,8 +188,12 @@ body.contraste #barra-brasil .link-barra { color: #FFF !important; }
 @media screen and (min-width: 960px) {
     #wrapper-barra-brasil { width: 960px; }
 }
-
 @media print {
-  * {-webkit-print-color-adjust:exact;}
-}
+	#barra-brasil .list{
+		  display: none;
+	}
 
+	#barra-brasil .acesso-info .link-barra:after {
+		content: " - Barra GovBr";	
+	}
+}

@@ -24,4 +24,15 @@ body.contraste #footer-brasil {
 @media screen and (min-width: 960px) {
     #wrapper-footer-brasil { width: 960px; }
 }
+@media print {
+	#wrapper-footer-brasil{
+		  border-top: 2px solid #dfdfdf;	
+	}
 
+	#wrapper-footer-brasil:before{
+		content: "Barra GovBr";
+		color: #606060;	
+   	font-size: 12px;
+   	font-family: "Open Sans",Arial,Helvetica,sans-serif;
+	}
+}
