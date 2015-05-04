@@ -1,5 +1,9 @@
 # Histórico de Alterações
 
+# 2.1.4
+
+* Adicionado !important para o alto contraste [caduvieira]
+
 # 2.1.3
 
 * Retirado nodeValue [caduvieira]
