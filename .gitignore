@@ -27,3 +27,4 @@ test-reports.xml
 ####################
 venv
 node_modules
+npm-debug.log

@@ -13,7 +13,7 @@
 "chai": "*",
 "chai-jq": "*",
 "mocha": "*",
-"zombie": "*",
+"zombie": "2.*",
 "ejs": "*"
 },
 "optionalDependencies": {},
