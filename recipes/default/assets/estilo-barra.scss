@@ -92,9 +92,11 @@ div#wrapper-barra-brasil {
 
 #barra-brasil .list-item {
     display: inline-block;
-    padding: 0 15px 0 13px;
     height: 32px;
     border-right: 2px solid #dfdfdf;
+    a {
+        padding: 8px 15px 8px 13px;
+    }
 }
 
 #barra-brasil .link-barra { color: $cor-link; }
@@ -148,8 +150,10 @@ body.contraste #barra-brasil .link-barra { color: #FFF !important; }
 		text-align: center;
 		height: 30px;
 		background: #EEE;
-		padding: 0 15px;
       border: 1px solid #dfdfdf;
+      a {
+          padding: 8px 30px 8px 28px;
+      }
 	}
 
 	body.contraste #barra-brasil .list-item {
