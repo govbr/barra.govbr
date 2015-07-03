@@ -7,7 +7,7 @@ Barra dinâmica do governo brasileiro. Nesse projeto está incluído o código d
 
 # Captura de tela da barra/rodapé
 
-![Barra e rodapé da identidade do governo brasileiro.](/doc/barra-printscreen.png)
+![Barra e rodapé da identidade do governo brasileiro.](barra-govbr/raw/master/doc/barra-printscreen.png)
 
 # Exemplo de uso da barra/rodapé
 
