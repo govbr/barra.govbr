@@ -101,7 +101,10 @@ div#wrapper-barra-brasil {
 
 #barra-brasil .link-barra { color: $cor-link; }
 
-body.contraste #barra-brasil .link-barra { color: #FFF !important; }
+body.contraste #barra-brasil .link-barra { 
+    color: #FF0 !important; 
+    text-decoration: underline;
+}
 
 #menu-icon {
   position: absolute;
