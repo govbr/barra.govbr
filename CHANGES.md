@@ -2,6 +2,7 @@
 
 # 2.1.4
 
+* Adicionando suporte a envio do órgão para o portal de serviços [caduvieira]
 * Colocando cores amarelas e sublinhadas nos links em alto contraste [caduvieira]
 * Adicionado !important para o alto contraste [caduvieira]
 * Modificando menu para CSS ao invés de imagem [caduvieira]
