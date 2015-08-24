@@ -9,7 +9,7 @@ describe("Testes de conteúdo de HTML da barra", function() {
 	var server, browser, barraUrl;
 	barraUrl = "http://localhost:3000/";
 	before(function() {
-		//server = app.listen(3000);
+		server = app.listen(3000);
 	});
 
 	beforeEach(function() {
@@ -19,7 +19,7 @@ describe("Testes de conteúdo de HTML da barra", function() {
 
 	after(function() {
 		// depois dos testes fechar o servidor
-		//server.close();
+		server.close();
 	});
 
 	it("trocar o conteúdo do #barra-brasil pelo correto", function(done) {
