@@ -20,26 +20,17 @@ Você pode contribuir e melhorar o exemplo no [Código do Manual da Barra do Gov
 
 ## Mudando o profile
 
-Altere o arquivo 'app/profile' para apontar para o novo profile. Exemplo:
+Execute o make com o parâmetro de PROFILE. Exemplo:
 
-		profile : copa2014
+		make run PROFILE=outubrorosa
 
 ## Dependências:
 
-Esses são comandos exemplos, por favor verifique no seu sistema como deve ser instalado.
+ * python2.7
 
- * node.js
-		apt-get install python-software-properties python g++ make
-		add-apt-repository ppa:chris-lea/node.js
-		apt-get update
-		apt-get install nodejs
-		apt-get install npm
+ * io.js
 
  * sass
-		apt-get install ruby-full build-essential
-		apt-get install rubygems
-		gem install sass
-		sass -v
 
  * zlib
 
@@ -57,10 +48,12 @@ E execute o
 
 ## Usando vagrant:
 
+O Vagrant vai criar o ambiente de desenvolvimento.
+
 ```
 vagrant up
 vagrant ssh
-cd /vagrant/
+cd barra-govbr
 ```
  
 ## Geração da barra
