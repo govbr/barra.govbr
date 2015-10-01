@@ -8,11 +8,15 @@
   div, a, ul, li {
     margin: 0;
     padding: 0;
-    border: 0;
     font-size: 100%;
     font-family: inherit;
     vertical-align: baseline;
   }
+}
+
+#barra-brasil .hashtag-barra-brasil {
+	margin-left: 25px;
+	color: #FFFBA2 !important;
 }
 
 #barra-brasil ul {
@@ -20,6 +24,8 @@
 }
 
 /* Css específico */
+
+$cor-link: #FFF;
 
 /*   web font   */
 
@@ -34,7 +40,7 @@
 
 #barra-brasil {
     height: 32px;
-    background: #EC5C9A;
+    background: #ea2c6a;
     font-weight: bold;
     font-size: 12px;
     line-height: 32px;
@@ -43,6 +49,11 @@
         text-decoration: none;
     }
 	 border-bottom: 1px solid #dfdfdf;
+	 box-sizing: content-box;
+}
+
+body.contraste #barra-brasil {
+	background: #000 !important;
 }
 
 div#wrapper-barra-brasil {
@@ -76,14 +87,6 @@ div#wrapper-barra-brasil {
     left: 130px;
 }
 
-#barra-brasil .hashtag-barra-brasil span{
-	padding-left: 42px;
-}
-
-#barra-brasil .hashtag-barra-brasil span a{
-	color: #FFFBA2;
-}
-
 #barra-brasil .list {
     position: absolute;
     top: 0;
@@ -94,18 +97,133 @@ div#wrapper-barra-brasil {
 
 #barra-brasil .list-item {
     display: inline-block;
-    padding: 0 15px 0 13px;
     height: 32px;
     border-right: 2px solid #dfdfdf;
+    a {
+        padding: 8px 15px 8px 13px;
+    }
 }
 
-#barra-brasil .link-barra { color: #FFF; }
+#barra-brasil .link-barra { color: $cor-link; }
 
-@media screen and (max-width: 668px)  {
-    #barra-brasil .list { top: -100px; }
+body.contraste #barra-brasil .link-barra { 
+    color: #FF0 !important; 
+    text-decoration: underline;
+}
+
+#menu-icon {
+  position: absolute;
+  top: 3px;
+  border-top: 15px double $cor-link;
+  border-bottom: 5px solid $cor-link;
+  display: none;
+  width: 20px;
+  right: 5px;
+}
+
+#barra-brasil li .hashtag-barra-brasil, 
+#barra-brasil li .hashtag-barra-brasil a {
+    visibility: hidden;
+}
+
+
+@media only screen and (max-width: 959px)  {
+	#barra-brasil #menu-icon {
+		display:inline-block;
+		padding: 5px 3px 0px 3px;
+	}
+
+	#barra-brasil .list .first { border-left: 1px solid #dfdfdf; }
+
+	#barra-brasil nav:hover #menu-icon,
+	#barra-brasil nav:active #menu-icon,
+	#barra-brasil nav:focus #menu-icon {
+		background-color: #DDD;
+   }
+
+	body.contraste #barra-brasil nav:hover #menu-icon,
+	body.contraste #barra-brasil nav:active #menu-icon,
+	body.contraste #barra-brasil nav:focus #menu-icon {
+		background-color: $cor-link !important;
+	}
+
+	#barra-brasil ul.list,
+	#barra-brasil ul.list:active,
+	#barra-brasil ul.list:focus {
+		overflow: hidden;
+		height: 0px;
+		transition: 0.3s;
+		padding-top: 32px;
+		width: auto;
+		position: absolute;
+      z-index: 9;
+	}
+
+   #barra-brasil .hashtag-barra-brasil, 
+   #barra-brasil .hashtag-barra-brasil a {
+	    visibility: hidden;
+   }
+
+   #barra-brasil li .hashtag-barra-brasil, 
+   #barra-brasil li .hashtag-barra-brasil a {
+      visibility: visible;
+    	margin-left: 0;
+   }
+
+
+	#barra-brasil .list-item {
+		display: block;
+		text-align: center;
+		height: 30px;
+		background: #ea2c6a;
+      border: 1px solid #dfdfdf;
+      a {
+          padding: 8px 30px 8px 28px;
+      }
+	}
+
+	body.contraste #barra-brasil .list-item {
+		background: #000 !important;
+	}
+
+	body.contraste #menu-icon {
+		border-top: 15px double #fff !important;
+  		border-bottom: 5px solid #fff !important;
+	}
+
+	#barra-brasil .list a:active li,
+	#barra-brasil .list a:focus li,
+	#barra-brasil .list a:hover li {
+   	 background: #DDD;
+	}
+
+	body.contraste #barra-brasil .list a:active li,
+	body.contraste #barra-brasil .list a:focus li,
+	body.contraste #barra-brasil .list a:hover li {
+   	 background: $cor-link !important;
+	}
+
+	#barra-brasil nav:active ul.list,
+	#barra-brasil nav:focus ul.list,
+	#barra-brasil nav:hover ul.list {
+		height: 160px;
+		transition: 0.5s;
+	}
+
+	div#wrapper-barra-brasil {
+		 overflow: visible;
+	}
 }
 
 @media screen and (min-width: 960px) {
     #wrapper-barra-brasil { width: 960px; }
 }
+@media print {
+	#barra-brasil .list{
+		  display: none;
+	}
 
+	#barra-brasil .acesso-info .link-barra:after {
+		content: " - Barra GovBr";	
+	}
+}

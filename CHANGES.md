@@ -3,6 +3,7 @@
 # 2.1.5
 
 * Corrigindo exemplo para o órgão [caduvieira]
+* Outubro rosa [caduvieira]
 
 # 2.1.4
 

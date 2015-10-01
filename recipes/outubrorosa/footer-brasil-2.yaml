@@ -3,9 +3,9 @@
 
 generate:
 
-- footer-brasil.js:
+- footer-brasil-original.js:
     source:
-      - build/footer-brasil.js       # parte de comportamento
+      - build/footer-brasil-1.js       # parte de comportamento
       - build/footer-brasil-css.js   # codigo de insercao do css
     uglify.bin: uglifyjs
 

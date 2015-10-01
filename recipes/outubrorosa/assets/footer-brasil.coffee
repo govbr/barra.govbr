@@ -5,12 +5,8 @@
   window._footerbrasil =
     insere_css: (css) ->
         style = document.createElement("style")
-        tipo = document.createAttribute("type")
-        tipo.nodeValue = "text/css"
-        media = document.createAttribute("media")
-        media.nodeValue = "all"
-        style.setAttributeNode tipo
-        style.setAttributeNode media
+        style.setAttribute "type","text/css"
+        style.setAttribute "media","all"
 
         if style.styleSheet #Hack para IE8
           style.styleSheet.cssText = css

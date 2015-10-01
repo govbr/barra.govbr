@@ -67,9 +67,9 @@ cd /vagrant/
 
 Execute o comando:
 
->    make run
+>    make run PROFILE=outubrorosa
 
-O profile selecionado será o contido em _app/profile_
+O profile selecionado é o outubrorosa nesse exemplo
 
 ## Testes da barra
 

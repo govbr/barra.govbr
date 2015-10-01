@@ -6,7 +6,7 @@ generate:
 - barra-brasil.js:
     source:
       - build/barra-brasil-original.js       # parte de comportamento
-#      - build/footer-brasil.js       # parte de comportamento
+      - build/footer-brasil-original.js       # parte de comportamento
     uglify.bin: uglifyjs
 
 css.embed: true

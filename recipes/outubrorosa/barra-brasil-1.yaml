@@ -7,7 +7,7 @@ generate:
     source:
       - assets/conteudo-barra.html
       - assets/barra-brasil.coffee
-      # - assets/estatisticas.coffee #Parte da estatistica do Piwik
+     # - assets/estatisticas.coffee #Parte da estatistica do Piwik
       - raw: "})();"  # fechamento do escopo da funcao anonima (ver template abaixo)
     template: |
         (function(){

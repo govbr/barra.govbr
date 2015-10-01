@@ -1,13 +1,13 @@
 # Makefile
+PROFILE = "default"
 run: build
 		venv/bin/python app/barrabrasil.py
-
 
 profile: build
 		venv/bin/python app/profile.py
 
 build: venv
-		sh ./build.sh
+		sh ./build.sh $(PROFILE)
 
 venv: venv/bin/activate
 venv/bin/activate: requirements.txt package.json
@@ -20,7 +20,7 @@ testReport:
 		npm run testReport 
 
 teste:
-		npm test
+		npm run test
 
 
 		
