@@ -2,28 +2,22 @@
 set -e -x -o pipefail
 export DEBIAN_FRONTEND='noninteractive'
 
-sudo add-apt-repository ppa:chris-lea/node.js
-sudo apt-get update
+cd /home/vagrant
 
-apt-get install -y \
-  python-dev \
-  python-pip \
-  nodejs \
-  ruby
+# Installing nvm
+wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
 
-pip install \
-  Flask \
-  config \
-  assetgen
+# This enables NVM without a logout/login
+export NVM_DIR="/home/vagrant/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-npm install -g \
-  coffee-script \
-  uglify-js \
-  express \
-  ejs \
-  zombie \
-  mocha \
-  chai \
-  chai-jq
+# Install a node and alias
+nvm install iojs
+nvm alias default iojs
 
-gem install sass
+rm -Rf barra-govbr/
+GIT_SSL_NO_VERIFY=true git clone http://portal.softwarepublico.gov.br/gitlab/govbr/barra-govbr.git
+
+cd barra-govbr
+
+make venv

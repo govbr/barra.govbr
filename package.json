@@ -2,12 +2,12 @@
 "name": "BarraBrasil",
 "description": "Barra oficial do governo federal brasileiro",
 "devDependencies": {
-"coffee-script": "1.9.3",
+"coffee-script": "1.10.0",
 "uglifyjs": "2.4.10",
 "express": "4.13.3",
 "chai": "3.2.0",
 "chai-jq": "0.0.8",
-"mocha": "2.2.5",
+"mocha": "2.3.3",
 "zombie": "4.1.0",
 "ejs": "2.3.3"
 },
