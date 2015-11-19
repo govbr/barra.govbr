@@ -1,5 +1,9 @@
 # Histórico de Alterações
 
+# 2.1.6
+
+* Corrigindo incompatibilidade com o bootstrap no line-height [caduvieira] #8
+
 # 2.1.5
 
 * Corrigindo exemplo para o órgão [caduvieira]
