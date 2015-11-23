@@ -1,5 +1,6 @@
 # Makefile
 PROFILE = "default"
+test: build teste run
 run: build
 		venv/bin/python app/barrabrasil.py
 
