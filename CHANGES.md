@@ -2,6 +2,8 @@
 
 # 2.1.6
 
+* Adicionando a campanha contra o mosquito Aedes [caduvieira]
+* Removendo o hack para o IE8 [caduvieira]
 * Corrigindo incompatibilidade com o bootstrap no line-height [caduvieira] #8
 
 # 2.1.5
