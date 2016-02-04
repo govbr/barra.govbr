@@ -1,5 +1,9 @@
 # Histórico de Alterações
 
+# 2.1.7
+
+* Correção da #14 e melhorando usabilidade da campanha [caduvieira]
+
 # 2.1.6
 
 * Adicionando a campanha contra o mosquito Aedes [caduvieira]
