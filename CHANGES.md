@@ -1,5 +1,9 @@
 # Histórico de Alterações
 
+# 2.1.9
+
+* Corrigindo bug adicionado pela versão no 2.1.8 [caduvieira]
+
 # 2.1.8
 
 * Incorporando imagens na barra com base64 da campanha [caduvieira]

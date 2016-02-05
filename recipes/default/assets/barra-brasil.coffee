@@ -28,7 +28,7 @@
         head.appendChild style
 
   if 'undefined' != typeof window.jQuery
-      jQuery.noConflict()
+
       jQuery(document).ready ($) ->
         
         $.isVersion = (left, oper, right) ->
