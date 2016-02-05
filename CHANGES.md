@@ -1,5 +1,9 @@
 # Histórico de Alterações
 
+# 2.1.8
+
+* Incorporando imagens na barra com base64 da campanha [caduvieira]
+
 # 2.1.7
 
 * Correção da #14 e melhorando usabilidade da campanha [caduvieira]
