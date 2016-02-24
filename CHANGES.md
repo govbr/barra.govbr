@@ -1,5 +1,10 @@
 # Histórico de Alterações
 
+# 2.1.10
+
+* Campanha do vaso conforme solicitação da SECOM [isaiascoelho] [caduvieira]
+* Corrigindo chamada do href='#' quando a base é diferente da URL [caduvieira]
+
 # 2.1.9
 
 * Corrigindo bug adicionado pela versão no 2.1.8 [caduvieira]
