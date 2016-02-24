@@ -14,16 +14,16 @@ generate:
     uglify.bin: uglifyjs
     css.compress: false
     source:
-       - ../../app/templates/default/barra-brasil_sem_licenca.js
+       - build/barra-brasil_sem_licenca.js
        - raw: "/** @license-end */"  # fechamento da licença
     template: |
         /** @license magnet:?xt=urn:btih:90dc5c0be029de84e523b9b3922520e79e0e6f08&dn=cc0.txt CC0 */  ${source|trim}
 
 css.embed: true
 css.embed.only: true
-output.directory: ../../app/templates/default
+output.directory: build
 output.hashed: false
-output.manifest: build/assets.json
+output.manifest: assets.json
 
 profile.dev:
   css.compress: false

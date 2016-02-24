@@ -10,16 +10,16 @@ fi
 if test -d "recipes/$profile"
 then
     cd recipes/$profile
+	 if test ! -d "../../templates/$profile"
+	 then
+			ln -s ../../recipes/$profile/build ../../app/templates/$profile
+	 fi	
     sh ./compile.sh
     cd ../../app
     touch profile
     echo 'profile :' $profile > profile
     echo 'date : "'$(date -R)'"'>> profile
-	 if test ! -d "templates/$profile"
-	 then
-			mkdir templates/$profile
-	 fi	
-    cp templates/$profile/* static/ #Copiando enquanto a barra é estática.
+    cp templates/$profile/barra-brasil.js static/ #Copiando enquanto a barra é estática.
 else
     echo "Erro. O profile '$profile' não existe."
 fi

@@ -34,7 +34,7 @@ js.compress: false
 js.uglify.bin: uglifyjs
 output.directory: build
 output.hashed: false
-output.manifest: build/assets.json
+output.manifest: assets.json
 
 profile.dev:
   css.compress: false

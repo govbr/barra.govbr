@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Css reset mínimo */
+#barra-brasil {
+  div, a, ul, li {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+  }
+}
+
+#barra-brasil ul {
+  list-style: none;
+}
+
+/* Css específico */
+
+$cor-link: #606060;
+
+/*   web font   */
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url("//barra.brasil.gov.br/static/opensans-bold.woff") format("woff");
+}
+
+/*  fim da web font   */
+
+#barra-brasil {
+    height: 32px;
+    background: #f1f1f1;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 32px;
+    font-family: "Open Sans",Arial,Helvetica,sans-serif;
+    a {
+        text-decoration: none;
+    }
+	 border-bottom: 1px solid #dfdfdf;
+	 box-sizing: content-box;
+}
+
+body.contraste #barra-brasil {
+	background: #000 !important;
+}
+
+div#wrapper-barra-brasil {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+	 height: 100%;
+}
+
+#barra-brasil .brasil-flag {
+    float: left;
+    padding: 7px 0 6px;
+    width: 115px;
+    height: 19px;
+    border-right: 2px solid #dfdfdf;
+}
+
+#barra-brasil .brasil-flag .link-barra {
+    display: block;
+    padding-left: 42px;
+    width: 43px;
+    background: embed("imagens/bandeira-brasil.svg") 8px center no-repeat;
+    text-transform: uppercase;
+    line-height: 19px;
+}
+
+#barra-brasil .acesso-info {
+    position: absolute;
+    left: 130px;
+}
+
+#barra-brasil .list {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#barra-brasil .list .first { border-left: 2px solid #dfdfdf; }
+
+#barra-brasil .list-item {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    border-right: 2px solid #dfdfdf;
+    a {
+        padding: 8px 15px 8px 13px;
+    }
+}
+
+#barra-brasil .link-barra { color: $cor-link; }
+
+body.contraste #barra-brasil .link-barra { 
+    color: #FF0 !important; 
+    text-decoration: underline;
+}
+
+#menu-icon {
+  position: absolute;
+  top: 3px;
+  border-top: 15px double $cor-link;
+  border-bottom: 5px solid $cor-link;
+  display: none;
+  width: 20px;
+  right: 5px;
+}
+
+@media only screen and (max-width: 959px)  {
+	#barra-brasil #menu-icon {
+		display:inline-block;
+		padding: 5px 3px 0px 3px;
+	}
+
+	#barra-brasil .list .first { border-left: 1px solid #dfdfdf; }
+
+	#barra-brasil nav:hover #menu-icon,
+	#barra-brasil nav:active #menu-icon,
+	#barra-brasil nav:focus #menu-icon {
+		background-color: #DDD;
+	}
+
+	body.contraste #barra-brasil nav:hover #menu-icon,
+	body.contraste #barra-brasil nav:active #menu-icon,
+	body.contraste #barra-brasil nav:focus #menu-icon {
+		background-color: $cor-link !important;
+	}
+
+	#barra-brasil ul.list,
+	#barra-brasil ul.list:active,
+	#barra-brasil ul.list:focus {
+		overflow: hidden;
+		height: 0px;
+		transition: 0.3s;
+		padding-top: 32px;
+		width: auto;
+		position: absolute;
+      z-index: 9;
+	}
+
+	#barra-brasil .list-item {
+		display: block;
+		text-align: center;
+		height: 30px;
+		background: #EEE;
+      border: 1px solid #dfdfdf;
+      a {
+          padding: 8px 30px 8px 28px;
+      }
+	}
+
+	body.contraste #barra-brasil .list-item {
+		background: #000 !important;
+	}
+
+	body.contraste #menu-icon {
+		border-top: 15px double #fff !important;
+  		border-bottom: 5px solid #fff !important;
+	}
+
+	#barra-brasil .list a:active li,
+	#barra-brasil .list a:focus li,
+	#barra-brasil .list a:hover li {
+   	 background: #DDD;
+	}
+
+	body.contraste #barra-brasil .list a:active li,
+	body.contraste #barra-brasil .list a:focus li,
+	body.contraste #barra-brasil .list a:hover li {
+   	 background: $cor-link !important;
+	}
+
+	#barra-brasil nav:active ul.list,
+	#barra-brasil nav:focus ul.list,
+	#barra-brasil nav:hover ul.list {
+		height: 150px;
+		transition: 0.5s;
+	}
+
+	div#wrapper-barra-brasil {
+		 overflow: visible;
+	}
+}
+
+@media screen and (min-width: 960px) {
+    #wrapper-barra-brasil { width: 960px; }
+}
+@media print {
+	#barra-brasil .list{
+		  display: none;
+	}
+
+	#barra-brasil .acesso-info .link-barra:after {
+		content: " - Barra GovBr";	
+	}
+}
