@@ -18,6 +18,7 @@ app/static/*.js
 test/*.jtl
 test/resultado.txt
 test-reports.xml
+recipes/*/assets/barra-brasil.coffee
 
 # Vagrant files #
 #################
