@@ -1,12 +1,13 @@
-  divBarra = window.document.getElementById("barra-brasil")
+  d = document
+  divBarra = d.getElementById("barra-brasil")
   if divBarra
     divBarra.removeAttribute "style"
   # conteudoBarra definido no barra-brasil-1.yaml e atribuido pelo assetgen
     divBarra.innerHTML = conteudoBarra
-    head = window.document.getElementsByTagName("head")[0]
+    head = d.getElementsByTagName("head")[0]
 
   getOrgaoContent = ->
-    metas = window.document.getElementsByTagName('meta')
+    metas = d.getElementsByTagName('meta')
     i = 0
     while i < metas.length
       if metas[i].getAttribute('property') == 'creator.productor'
@@ -14,7 +15,7 @@
       i++
     ''
 
-  link = document.getElementById('barra-brasil-orgao')
+  link = d.getElementById('barra-brasil-orgao')
   link.setAttribute 'href', 'http://www.servicos.gov.br/?pk_campaign=barrabrasil'+getOrgaoContent()
 
 
@@ -23,6 +24,6 @@
         style = document.createElement("style")
         style.setAttribute "type","text/css"
         style.setAttribute "media","all"
-        style.appendChild document.createTextNode(css)
+        style.appendChild d.createTextNode(css)
         
         head.appendChild style

@@ -30,7 +30,7 @@
                 return true == (l < r or l == r and l_pre)
           false
          
-        if jQuery.isVersion('1.7','<=',jQuery.fn.jquery) or (jQuery.fn.jquery.startsWith('1.10')) or (jQuery.fn.jquery.startsWith('1.11')) or (jQuery.fn.jquery.startsWith('1.12')) or (jQuery.fn.jquery.startsWith('1.13'))
+        if jQuery.isVersion('1.7','<=',jQuery.fn.jquery) or (jQuery.fn.jquery.substring(0, '1.10'.length) == '1.10') or (jQuery.fn.jquery.substring(0, '1.11'.length) == '1.11') or (jQuery.fn.jquery.substring(0, '1.12'.length) == '1.12') or (jQuery.fn.jquery.substring(0, '1.13'.length) == '1.13')
 
           setCookieCampaign = (cname, cvalue, exdays) ->
             d = new Date
