@@ -1,12 +1,12 @@
-  divBarra = document.getElementById("barra-brasil")
+  divBarra = window.document.getElementById("barra-brasil")
   if divBarra
     divBarra.removeAttribute "style"
   # conteudoBarra definido no barra-brasil-1.yaml e atribuido pelo assetgen
     divBarra.innerHTML = conteudoBarra
-    head = document.getElementsByTagName("head")[0]
+    head = window.document.getElementsByTagName("head")[0]
 
   getOrgaoContent = ->
-    metas = document.getElementsByTagName('meta')
+    metas = window.document.getElementsByTagName('meta')
     i = 0
     while i < metas.length
       if metas[i].getAttribute('property') == 'creator.productor'
