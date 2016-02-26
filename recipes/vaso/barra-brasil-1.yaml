@@ -16,6 +16,7 @@ generate:
 - estilo-barra.css:
     source:
       - assets/estilo-barra.scss
+      - assets/estilo-campanha.scss
     depends:
       - assets/imagens/*
     embed.path.root: assets

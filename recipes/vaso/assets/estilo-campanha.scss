@@ -1,0 +1,68 @@
+@media (max-width:1250px) {
+	#campanha-contra-aegypti {
+		display:none
+	}
+}
+
+@media (min-width:940px) {
+	body #aegypti-intervencao #aegypti-close {
+		width:42px;
+		height:42px;
+		margin-left:348px;
+		top:42px;
+		left:50%
+	}
+}
+
+#aegypti-intervencao {
+	width:100%;
+	margin-top:-140px;
+	position:fixed;
+	z-index:999999;
+	top:50%;
+	text-align:center
+}
+
+#aegypti-intervencao #aegypti-banner:focus {
+	outline:0!important
+}
+
+#aegypti-intervencao #aegypti-close {
+	width:4.4%;
+	height:12%;
+	display:block;
+	position:absolute;top:12.4%;
+	left:87.2%;
+	overflow:hidden;
+	text-indent:-999999px
+}
+
+#aegypti-intervencao img { 
+	width:100%;
+	max-width:939px
+}
+
+#campanha-contra-aegypti {
+	width:80px;
+	height:152px;
+	margin-left:-600px;
+	display:block;
+	position:absolute;
+	top:44px;
+	left:50%;
+	background-repeat:no-repeat
+}
+
+#campanha-contra-aegypti.vaso-planta:hover {
+	background-position:-129px 0
+	}
+	@keyframes fadeIn {
+		from {opacity:0}to{opacity:1}
+}
+
+
+#campanha-contra-aegypti.vaso-planta {
+	animation:fadeIn 2s;
+	cursor:url("http://www.brasil.gov.br/pa.cur"), default;
+	background-image:embed("imagens/vaso.png");
+}
