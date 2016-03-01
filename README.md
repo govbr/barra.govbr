@@ -16,13 +16,17 @@ O exemplo de como utilizar a barra no seu sítio está publicado em [Manual da B
 A página de testes está disponível em [Teste da Barra do Governo Brasileiro](http://barra.governoeletronico.gov.br/teste/).
 Você pode contribuir e melhorar o exemplo no [Código do Manual da Barra do Governo Brasileiro](http://github.com/govbr/brasil.gov.manualbarra/).
 
+# Sugerindo nova campanha/profile
+
+Copie o profile 'vaso' e altere os arquivos referentes a campanha ou a barra e crie um pull request.
+
 # Como gerar a barra/rodapé
 
 ## Mudando o profile
 
 Execute o make com o parâmetro de PROFILE. Exemplo:
 
-		make run PROFILE=outubrorosa
+		PROFILE=outubrorosa make run 
 
 ## Dependências:
 
@@ -60,7 +64,7 @@ cd barra-govbr
 
 Execute o comando:
 
->    make run PROFILE=outubrorosa
+>   PROFILE=outubrorosa make run 
 
 O profile selecionado é o outubrorosa nesse exemplo
 
