@@ -1,5 +1,9 @@
 # Histórico de Alterações
 
+# 2.1.11
+
+* Corrigindo z-index para a campanha [caduvieira]
+
 # 2.1.10
 
 * Campanha do vaso conforme solicitação da SECOM [isaiascoelho] [caduvieira]
