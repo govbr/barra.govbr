@@ -50,7 +50,8 @@
 	position:absolute;
 	top:44px;
 	left:50%;
-	background-repeat:no-repeat
+	background-repeat:no-repeat;
+	z-index:999999;	
 }
 
 #campanha-contra-aegypti.vaso-planta:hover {
