@@ -9,12 +9,28 @@ generate:
       - build/footer-brasil-original.js       # parte de comportamento
     uglify.bin: uglifyjs
 
+- barra-brasil_sem_licenca-en.js:
+    source:
+      - build/barra-brasil-original-en.js       # parte de comportamento
+      - build/footer-brasil-original.js       # parte de comportamento
+    uglify.bin: uglifyjs
+
 - barra-brasil.js:
     compress: false
     uglify.bin: uglifyjs
     css.compress: false
     source:
        - build/barra-brasil_sem_licenca.js
+       - raw: "/** @license-end */"  # fechamento da licença
+    template: |
+        /** @license magnet:?xt=urn:btih:90dc5c0be029de84e523b9b3922520e79e0e6f08&dn=cc0.txt CC0 */  ${source|trim}
+
+- barra-brasil-en.js:
+    compress: false
+    uglify.bin: uglifyjs
+    css.compress: false
+    source:
+       - build/barra-brasil_sem_licenca-en.js
        - raw: "/** @license-end */"  # fechamento da licença
     template: |
         /** @license magnet:?xt=urn:btih:90dc5c0be029de84e523b9b3922520e79e0e6f08&dn=cc0.txt CC0 */  ${source|trim}

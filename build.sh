@@ -20,6 +20,7 @@ then
     echo 'profile :' $profile > profile
     echo 'date : "'$(date -R)'"'>> profile
     cp templates/$profile/barra-brasil.js static/ #Copiando enquanto a barra é estática.
+    cp templates/$profile/barra-brasil-en.js static/ #Copiando enquanto a barra é estática.
 else
     echo "Erro. O profile '$profile' não existe."
 fi
