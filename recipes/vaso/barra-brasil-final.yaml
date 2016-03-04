@@ -46,7 +46,7 @@ generate:
     uglify.bin: uglifyjs
     css.compress: false
     source:
-       - build/barra-brasil_sem_licenca-en.js
+       - build/barra-brasil_sem_licenca-fr.js
        - raw: "/** @license-end */"  # fechamento da licença
     template: |
         /** @license magnet:?xt=urn:btih:90dc5c0be029de84e523b9b3922520e79e0e6f08&dn=cc0.txt CC0 */  ${source|trim}
