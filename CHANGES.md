@@ -1,5 +1,9 @@
 # Histórico de Alterações
 
+# 2.1.12
+
+* Alterando posição left para o vaso/campanha não ficar em cima do cabeçalho na IDG padrão. [caduvieira]
+
 # 2.1.11
 
 * Corrigindo z-index para a campanha [caduvieira]
