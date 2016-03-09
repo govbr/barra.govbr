@@ -29,7 +29,7 @@ generate:
        - build/barra-brasil_sem_licenca.js
        - raw: "/** @license-end */"  # fechamento da licença
     template: |
-        /** @license magnet:?xt=urn:btih:90dc5c0be029de84e523b9b3922520e79e0e6f08&dn=cc0.txt CC0 */  ${source|trim}
+        /** @source https://softwarepublico.gov.br/gitlab/govbr/barra-govbr/raw/master/recipes/default/assets/barra.coffee @license magnet:?xt=urn:btih:90dc5c0be029de84e523b9b3922520e79e0e6f08&dn=cc0.txt CC0 */ ${source|trim}
 
 - barra-brasil-en.js:
     compress: false
@@ -39,7 +39,7 @@ generate:
        - build/barra-brasil_sem_licenca-en.js
        - raw: "/** @license-end */"  # fechamento da licença
     template: |
-        /** @license magnet:?xt=urn:btih:90dc5c0be029de84e523b9b3922520e79e0e6f08&dn=cc0.txt CC0 */  ${source|trim}
+        /** @source https://softwarepublico.gov.br/gitlab/govbr/barra-govbr/raw/master/recipes/default/assets/barra.coffee @license magnet:?xt=urn:btih:90dc5c0be029de84e523b9b3922520e79e0e6f08&dn=cc0.txt CC0 */  ${source|trim}
 
 - barra-brasil-fr.js:
     compress: false
@@ -49,7 +49,7 @@ generate:
        - build/barra-brasil_sem_licenca-fr.js
        - raw: "/** @license-end */"  # fechamento da licença
     template: |
-        /** @license magnet:?xt=urn:btih:90dc5c0be029de84e523b9b3922520e79e0e6f08&dn=cc0.txt CC0 */  ${source|trim}
+        /** @source https://softwarepublico.gov.br/gitlab/govbr/barra-govbr/raw/master/recipes/default/assets/barra.coffee @license magnet:?xt=urn:btih:90dc5c0be029de84e523b9b3922520e79e0e6f08&dn=cc0.txt CC0 */  ${source|trim}
 
 css.embed: true
 css.embed.only: true
