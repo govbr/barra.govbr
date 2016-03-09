@@ -1,5 +1,10 @@
 # Histórico de Alterações
 
+# 2.1.13
+
+* Adicionando @source no código [caduvieira]
+* Voltando a posição left do vaso [isaiascoelho]
+
 # 2.1.12
 
 * Alterando posição left para o vaso/campanha não ficar em cima do cabeçalho na IDG padrão. [caduvieira]
