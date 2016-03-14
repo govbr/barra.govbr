@@ -4,6 +4,7 @@
 
 * Adicionando @source no código [caduvieira]
 * Voltando a posição left do vaso [isaiascoelho]
+* Resolvendo _#19_ [caduvieira]
 
 # 2.1.12
 
