@@ -24,6 +24,6 @@
         style = document.createElement("style")
         style.setAttribute "type","text/css"
         style.setAttribute "media","all"
-        style.appendChild d.createTextNode(css)
+        style.appendChild document.createTextNode(css)
         
         head.appendChild style
