@@ -51,8 +51,8 @@
 }
 #campanha-contra-aegypti.garrafa {
     animation: fadeIn 2s;
-    cursor: url(mao_garrafa.png) 35 64, pointer;
-    background-image: url(garrafa.png)
+    cursor: embed('imagens/mao_garrafa.png') 35 64, pointer;
+    background-image: embed('imagens/garrafa.png')
 }
 #campanha-contra-aegypti.garrafa:hover {
     width: 120px;

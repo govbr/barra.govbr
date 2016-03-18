@@ -51,8 +51,8 @@
 }
 #campanha-contra-aegypti.pneu {
     animation: fadeIn 2s;
-    cursor: url(mao_pneu.png) 55 20, pointer;
-    background-image: url(pneu.png)
+    cursor: embed('imagens/mao_pneu.png') 55 20, pointer;
+    background-image: embed('imagens/pneu.png')
 }
 #campanha-contra-aegypti.pneu:hover {
     height: 141px;
