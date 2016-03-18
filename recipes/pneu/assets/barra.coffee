@@ -1,1 +1,0 @@
-../../default/assets/barra.coffee
