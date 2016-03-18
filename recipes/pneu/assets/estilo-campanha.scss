@@ -1,0 +1,69 @@
+@media (max-width: 1160px) {
+    #campanha-contra-aegypti {
+        display: none !important
+    }
+}
+@media (min-width: 940px) {
+    body #aegypti-intervencao #aegypti-close {
+        width: 42px;
+        height: 42px;
+        margin-left: 348px;
+        top: 42px;
+        left: 50%
+    }
+}
+#aegypti-intervencao {
+    width: 100%;
+    margin-top: -140px;
+    position: fixed;
+    z-index: 999999;
+    top: 50%;
+    text-align: center
+}
+#aegypti-intervencao #aegypti-banner:focus {
+    outline: 0!important
+}
+#aegypti-intervencao #aegypti-close {
+    width: 4.4%;
+    height: 12%;
+    display: block;
+    position: absolute;
+    top: 12.4%;
+    left: 87.2%;
+    overflow: hidden;
+    text-indent: -999999px
+}
+#aegypti-intervencao img {
+    width: 100%;
+    max-width: 939px
+}
+#campanha-contra-aegypti {
+    width: 150px;
+    height: 81px;
+    margin-left: -668px;
+    display: block;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    z-index: 999999;
+    transition: none;
+    background-repeat: no-repeat
+}
+#campanha-contra-aegypti.pneu {
+    animation: fadeIn 2s;
+    cursor: url(mao_pneu.png) 55 20, pointer;
+    background-image: url(pneu.png)
+}
+#campanha-contra-aegypti.pneu:hover {
+    height: 141px;
+    top: 60px;
+    background: none
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
