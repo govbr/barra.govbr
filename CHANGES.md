@@ -1,5 +1,9 @@
 # Histórico de Alterações
 
+# 2.1.14
+
+* Campanha da garrafa. Não há suporte para o IE nessa campanha.[isaiascoelho]
+
 # 2.1.13
 
 * Adicionando @source no código [caduvieira]
