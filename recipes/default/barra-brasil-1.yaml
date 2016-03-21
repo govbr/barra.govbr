@@ -13,6 +13,26 @@ generate:
         (function(){
             var conteudoBarra = '${source|trim}';
 
+- barra-brasil-1-en.js:
+    source:
+      - assets/conteudo-barra-en.html
+      - assets/barra-brasil.coffee
+     # - assets/estatisticas.coffee #Parte da estatistica do Piwik
+      - raw: "})();"  # fechamento do escopo da funcao anonima (ver template abaixo)
+    template: |
+        (function(){
+            var conteudoBarra = '${source|trim}';
+
+- barra-brasil-1-fr.js:
+    source:
+      - assets/conteudo-barra-fr.html
+      - assets/barra-brasil.coffee
+     # - assets/estatisticas.coffee #Parte da estatistica do Piwik
+      - raw: "})();"  # fechamento do escopo da funcao anonima (ver template abaixo)
+    template: |
+        (function(){
+            var conteudoBarra = '${source|trim}';
+
 - estilo-barra.css:
     source:
       - assets/estilo-barra.scss

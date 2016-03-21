@@ -6,7 +6,7 @@ generate:
 
 - footer-brasil-1.js:
     source:
-      - assets/conteudo-footer.html
+      - ../default/assets/conteudo-footer.html
       - assets/footer-brasil.coffee
       - raw: "})();"  # fechamento do escopo da funcao anonima (ver template abaixo)
     template: |
@@ -15,8 +15,9 @@ generate:
 
 - estilo-footer.css:
     source:
-      - assets/estilo-footer.scss
+      - ../default/assets/estilo-footer.scss
     depends:
+      - ../default/assets/imagens/*
       - assets/imagens/*
     embed.path.root: assets
     embed.url.base: imagens/
@@ -34,7 +35,7 @@ js.compress: false
 js.uglify.bin: uglifyjs
 output.directory: build
 output.hashed: false
-output.manifest: assets.json
+output.manifest: build/assets.json
 
 profile.dev:
   css.compress: false

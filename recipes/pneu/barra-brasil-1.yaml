@@ -35,9 +35,10 @@ generate:
 
 - estilo-barra.css:
     source:
-      - assets/estilo-barra.scss
+      - ../default/assets/estilo-barra.scss
       - assets/estilo-campanha.scss
     depends:
+      - ../default/assets/imagens/*
       - assets/imagens/*
     embed.path.root: assets
     embed.url.base: imagens/
@@ -55,7 +56,7 @@ js.compress: false
 js.uglify.bin: uglifyjs
 output.directory: build
 output.hashed: false
-output.manifest: assets.json
+output.manifest: build/assets.json
 
 profile.dev:
   css.compress: false
