@@ -1,5 +1,11 @@
 # Histórico de Alterações
 
+# 2.1.15
+
+* Campanha do pneu. Também não há suporte para IE nessa campanha. [isaiascoelho]
+* Adição do aria-label no link da campanha. [caduvieira]
+* Utilizando imagens em SVG embutidas com url encoding. [caduvieira]
+
 # 2.1.14
 
 * Campanha da garrafa. Não há suporte para o IE nessa campanha.[isaiascoelho]
