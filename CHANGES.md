@@ -1,5 +1,9 @@
 # Histórico de Alterações
 
+# 2.1.16
+
+* Retirada da campanha a pedido da SECOM [caduvieira]
+
 # 2.1.15
 
 * Campanha do pneu. Também não há suporte para IE nessa campanha. [isaiascoelho]
