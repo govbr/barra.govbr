@@ -1,5 +1,9 @@
 # Histórico de Alterações
 
+# 2.1.17
+
+* Barra em inglês, espanhol, francês. [caduvieira]
+
 # 2.1.16
 
 * Retirada da campanha a pedido da SECOM [caduvieira]

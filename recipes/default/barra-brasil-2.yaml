@@ -21,6 +21,12 @@ generate:
       - build/barra-brasil-css.js   # codigo de insercao do css
     uglify.bin: uglifyjs
 
+- barra-brasil-original-es.js:
+    source:
+      - build/barra-brasil-1-es.js       # parte de comportamento
+      - build/barra-brasil-css.js   # codigo de insercao do css
+    uglify.bin: uglifyjs
+
 css.embed: true
 css.embed.only: true
 output.directory: build

@@ -33,6 +33,16 @@ generate:
         (function(){
             var conteudoBarra = '${source|trim}';
 
+- barra-brasil-1-es.js:
+    source:
+      - assets/conteudo-barra-es.html
+      - assets/barra-brasil.coffee
+     # - assets/estatisticas.coffee #Parte da estatistica do Piwik
+      - raw: "})();"  # fechamento do escopo da funcao anonima (ver template abaixo)
+    template: |
+        (function(){
+            var conteudoBarra = '${source|trim}';
+
 - estilo-barra.css:
     source:
       - assets/estilo-barra.scss
