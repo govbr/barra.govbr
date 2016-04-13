@@ -23,7 +23,7 @@ generate:
 
 - barra-brasil_sem_licenca-es.js:
     source:
-      - build/barra-brasil-original-fr.js       # parte de comportamento
+      - build/barra-brasil-original-es.js       # parte de comportamento
       - build/footer-brasil-original.js       # parte de comportamento
     uglify.bin: uglifyjs
 

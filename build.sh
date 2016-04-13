@@ -22,6 +22,7 @@ then
     cp templates/$profile/barra-brasil.js static/ #Copiando enquanto a barra é estática.
     cp templates/$profile/barra-brasil-en.js static/ #Copiando enquanto a barra é estática.
     cp templates/$profile/barra-brasil-fr.js static/ #Copiando enquanto a barra é estática.
+    cp templates/$profile/barra-brasil-es.js static/ #Copiando enquanto a barra é estática.
 else
     echo "Erro. O profile '$profile' não existe."
 fi
