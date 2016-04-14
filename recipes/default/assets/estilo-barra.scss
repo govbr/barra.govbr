@@ -77,6 +77,15 @@ div#wrapper-barra-brasil {
     line-height: 19px;
 }
 
+#barra-brasil .brasil-vlibras {
+    width: 43px;
+    background: embed("imagens/vlibras.svg") 8px center no-repeat;
+    padding-top: 32px;
+	 position: absolute;
+	 top: 0;
+    right: 0;
+}
+
 #barra-brasil .acesso-info {
     position: absolute;
     left: 130px;
@@ -85,7 +94,7 @@ div#wrapper-barra-brasil {
 #barra-brasil .list {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 40px;
 }
 
 #barra-brasil .list .first { border-left: 2px solid #dfdfdf; }
