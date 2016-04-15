@@ -6,12 +6,12 @@
 "coffee-script": "1.10.0",
 "coffeescript-concat": "1.0.14",
 "uglifyjs": "2.4.10",
-"express": "4.13.3",
-"chai": "3.4.1",
+"express": "4.13.4",
+"chai": "3.5.0",
 "chai-jq": "0.0.9",
-"mocha": "2.3.4",
+"mocha": "2.4.5",
 "zombie": "4.2.1",
-"ejs": "2.3.4"
+"ejs": "2.4.1"
 },
 "optionalDependencies": {},
 "scripts": {
