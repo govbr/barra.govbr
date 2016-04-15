@@ -53,7 +53,6 @@ body.contraste #barra-brasil {
 
 div#wrapper-barra-brasil {
     position: relative;
-    overflow: hidden;
     margin: 0 auto;
     width: 100%;
     max-width: 960px;
@@ -77,13 +76,57 @@ div#wrapper-barra-brasil {
     line-height: 19px;
 }
 
-#barra-brasil .brasil-vlibras {
-    width: 43px;
-    background: embed("imagens/vlibras.svg") 8px center no-repeat;
-    padding-top: 32px;
-	 position: absolute;
-	 top: 0;
+#barra-brasil #brasil-vlibras {
+    position: absolute;
+    top: 0;
     right: 0;
+    display: block;
+    ul{
+       padding-top: 32px;
+    }
+
+    .logo-vlibras {
+      background: embed("imagens/vlibras.svg") 8px center no-repeat;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 43px;
+      height: 32px;
+      display: block;
+    }
+    .link-vlibras {
+		overflow: hidden;
+		height: 0px;
+		transition: 0.1s;
+		width: auto;
+      z-index: 9;
+      height: 0;
+      display: block;
+      border: 2px solid #dfdfdf;
+      padding: 5px 12px 5px 12px;
+      color: #606060;
+      visibility: hidden;
+   }
+    .logo-vlibras:hover + .link-vlibras,
+    .logo-vlibras:active + .link-vlibras,
+    .logo-vlibras:focus + .link-vlibras {
+      overflow: visible;
+      height: 32px;
+      display: block;
+      border: 2px solid #dfdfdf;
+      padding: 5px 12px 5px 12px;
+      visibility: visible;
+    }
+    .link-vlibras:hover,
+    .link-vlibras:active,
+    .link-vlibras:focus {
+      overflow: visible;
+      height: 32px;
+      display: block;
+      border: 2px solid #dfdfdf;
+      padding: 5px 12px 5px 12px;
+      visibility: visible;
+    }
 }
 
 #barra-brasil .acesso-info {
@@ -116,7 +159,7 @@ body.contraste #barra-brasil .link-barra {
     text-decoration: underline;
 }
 
-#menu-icon {
+#barra-brasil #menu-icon {
   position: absolute;
   top: 3px;
   border-top: 15px double $cor-link;
