@@ -19,6 +19,8 @@ test/*.jtl
 test/resultado.txt
 test-reports.xml
 recipes/*/assets/barra-brasil.coffee
+recipes/*/assets/conteudo-barra.html
+recipes/*/assets/conteudo-barra-*.html
 
 # Vagrant files #
 #################
