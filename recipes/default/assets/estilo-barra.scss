@@ -21,6 +21,8 @@
 /* Css específico */
 
 $cor-link: #606060;
+$cor-borda: #dfdfdf;
+$cor-fundo: #f1f1f1;
 
 /*   web font   */
 
@@ -35,7 +37,7 @@ $cor-link: #606060;
 
 #barra-brasil {
     height: 32px;
-    background: #f1f1f1;
+    background: $cor-fundo;
     font-weight: bold;
     font-size: 12px;
     line-height: 32px;
@@ -43,12 +45,17 @@ $cor-link: #606060;
     a {
         text-decoration: none;
     }
-	 border-bottom: 1px solid #dfdfdf;
+	 border-bottom: 1px solid $cor-borda;
 	 box-sizing: content-box;
 }
 
-body.contraste #barra-brasil {
+body.contraste #barra-brasil, body.contraste .link-vlibras {
 	background: #000 !important;
+}
+
+body.contraste #barra-brasil .link-barra, body.contraste #barra-brasil .link-vlibras { 
+    color: #FF0 !important; 
+    text-decoration: underline;
 }
 
 div#wrapper-barra-brasil {
@@ -64,7 +71,7 @@ div#wrapper-barra-brasil {
     padding: 7px 0 6px;
     width: 115px;
     height: 19px;
-    border-right: 2px solid #dfdfdf;
+    border-right: 2px solid $cor-borda;
 }
 
 #barra-brasil .brasil-flag .link-barra {
@@ -103,31 +110,24 @@ div#wrapper-barra-brasil {
       z-index: 9;
       height: 0;
       display: block;
-      border: 2px solid #dfdfdf;
+      border: 2px solid $cor-borda;
       padding: 5px 12px 5px 12px;
-      color: #606060;
+      color: $cor-link;
+		visibility: hidden;
    }
-   
+		
    .logo-vlibras:hover + .link-vlibras,
    .logo-vlibras:active + .link-vlibras,
-   .logo-vlibras:focus + .link-vlibras {
-      overflow: visible;
-      height: 32px;
-      display: block;
-      border: 2px solid #dfdfdf;
-      padding: 5px 12px 5px 12px;
-      visibility: visible;
-    }
-
+   .logo-vlibras:focus + .link-vlibras,
     .link-vlibras:hover,
     .link-vlibras:active,
     .link-vlibras:focus {
-      overflow: visible;
       height: 32px;
       display: block;
-      border: 2px solid #dfdfdf;
+      border: 2px solid $cor-borda;
       padding: 5px 12px 5px 12px;
       visibility: visible;
+      background: $cor-fundo;
     }
 }
 
@@ -142,13 +142,13 @@ div#wrapper-barra-brasil {
     right: 40px;
 }
 
-#barra-brasil .list .first { border-left: 2px solid #dfdfdf; }
+#barra-brasil .list .first { border-left: 2px solid $cor-borda; }
 
 #barra-brasil .list-item {
     display: inline-block;
     height: 32px;
     line-height: 32px;
-    border-right: 2px solid #dfdfdf;
+    border-right: 2px solid $cor-borda;
     a {
         padding: 8px 15px 8px 13px;
     }
@@ -156,10 +156,6 @@ div#wrapper-barra-brasil {
 
 #barra-brasil .link-barra { color: $cor-link; }
 
-body.contraste #barra-brasil .link-barra { 
-    color: #FF0 !important; 
-    text-decoration: underline;
-}
 
 #barra-brasil #menu-icon {
   position: absolute;
@@ -177,7 +173,7 @@ body.contraste #barra-brasil .link-barra {
 		padding: 5px 3px 0px 3px;
 	}
 
-	#barra-brasil .list .first { border-left: 1px solid #dfdfdf; }
+	#barra-brasil .list .first { border-left: 1px solid $cor-borda; }
 
 	#barra-brasil nav:hover #menu-icon,
 	#barra-brasil nav:active #menu-icon,
@@ -208,7 +204,7 @@ body.contraste #barra-brasil .link-barra {
 		text-align: center;
 		height: 30px;
 		background: #EEE;
-      border: 1px solid #dfdfdf;
+      border: 1px solid $cor-borda;
       a {
           padding: 8px 30px 8px 28px;
       }
