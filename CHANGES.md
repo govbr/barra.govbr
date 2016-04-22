@@ -3,7 +3,6 @@
 # 2.1.17
 
 * Barra em inglês, espanhol, francês. [caduvieira]
-* Link para vLibras. [caduvieira]
 
 # 2.1.16
 
