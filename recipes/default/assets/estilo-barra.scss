@@ -49,11 +49,11 @@ $cor-fundo: #f1f1f1;
 	 box-sizing: content-box;
 }
 
-body.contraste #barra-brasil, body.contraste .link-vlibras {
+body.contraste #barra-brasil {
 	background: #000 !important;
 }
 
-body.contraste #barra-brasil .link-barra, body.contraste #barra-brasil .link-vlibras { 
+body.contraste #barra-brasil .link-barra { 
     color: #FF0 !important; 
     text-decoration: underline;
 }
@@ -81,54 +81,6 @@ div#wrapper-barra-brasil {
     background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2226%22%20height%3D%2219%22%20viewBox%3D%220%200%20100000%2070000%22%3E%3Cpath%20fill%3D%22%2300923F%22%20d%3D%22M0%200h100000v70000H0z%22%2F%3E%3Cpath%20fill%3D%22%23F8C300%22%20d%3D%22M50000%208500L8500%2035000l41500%2026500%2041500-26500L50000%208500z%22%2F%3E%3Ccircle%20fill%3D%22%2328166F%22%20cx%3D%2249963%22%20cy%3D%2235000%22%20r%3D%2217464%22%2F%3E%3Cpath%20fill%3D%22%23FFF%22%20d%3D%22M39537%2029605c10388%200%2019911%203821%2027238%2010127%20242-850%20421-1726%20532-2622-7597-6162-17265-9862-27770-9862-1821%200-3617%20114-5382%20330-377%20805-695%201642-948%202507%202065-316%204179-480%206330-480z%22%2F%3E%3C%2Fsvg%3E") 8px center no-repeat;
     text-transform: uppercase;
     line-height: 19px;
-}
-
-#barra-brasil #brasil-vlibras {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
-
-    ul{
-       padding-top: 32px;
-    }
-
-    .logo-vlibras {
-      background: embed("imagens/vlibras.svg") 8px center no-repeat;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 43px;
-      height: 32px;
-      display: block;
-    }
-
-    .link-vlibras {
-		height: 0;
-		transition: 0.1s;
-		width: auto;
-      z-index: 9;
-      height: 0;
-      display: block;
-      border: 2px solid $cor-borda;
-      padding: 5px 12px 5px 12px;
-      color: $cor-link;
-		visibility: hidden;
-   }
-		
-   .logo-vlibras:hover + .link-vlibras,
-   .logo-vlibras:active + .link-vlibras,
-   .logo-vlibras:focus + .link-vlibras,
-    .link-vlibras:hover,
-    .link-vlibras:active,
-    .link-vlibras:focus {
-      height: 32px;
-      display: block;
-      border: 2px solid $cor-borda;
-      padding: 5px 12px 5px 12px;
-      visibility: visible;
-      background: $cor-fundo;
-    }
 }
 
 #barra-brasil .acesso-info {
