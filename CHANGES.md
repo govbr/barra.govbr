@@ -1,5 +1,9 @@
 # Histórico de Alterações
 
+# 2.1.18
+
+* Adicionando link do vlibras. [caduvieira]
+
 # 2.1.17
 
 * Barra em inglês, espanhol, francês. [caduvieira]
