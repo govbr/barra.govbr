@@ -1,5 +1,9 @@
 # Histórico de Alterações
 
+# 2.1.19
+
+* Correção do z-index e position para link vlibras. [caduvieira]
+
 # 2.1.18
 
 * Adicionando link do vlibras. [caduvieira]
