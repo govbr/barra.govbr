@@ -1,5 +1,9 @@
 # Histórico de Alterações
 
+# 2.1.20
+
+* Novo logo de governo conforme aprovação da SECOM. [caduvieira]
+
 # 2.1.19
 
 * Correção do z-index e position para link vlibras. [caduvieira]
