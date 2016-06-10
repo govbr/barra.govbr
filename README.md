@@ -86,7 +86,7 @@ Para gerar um teste em XUNIT execute
 3. A Barra deve suportar a inclusão dinâmica do nome da organização
 4. A Barra deve funcionar nos navegadores: 
 
->Internet Explorer versão 8 ou superior
+>Internet Explorer versão 11 ou superior
 
 >Mozilla Firefox versão 24
 
