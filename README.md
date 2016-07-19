@@ -22,6 +22,11 @@ Copie o profile 'vaso' e altere os arquivos referentes a campanha ou a barra e c
 
 # Como gerar a barra/rodapé
 
+## Mudanças no visual da barra
+
+Mande sua sugestão para secom.comunicacaodigital@presidencia.gov.br com cópia para identidade-digital@listas.softwarepublico.gov.br
+e sugira um PR.
+
 ## Mudando o profile
 
 Execute o make com o parâmetro de PROFILE. Exemplo:
