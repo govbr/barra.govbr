@@ -1,8 +1,11 @@
 # Histórico de Alterações
 
-# 2.1.20
+# 2.1.21
 
 * Dando destaque ao link 'serviços' conforme pedido da SECOM. [caduvieira]
+
+# 2.1.20
+
 * Novo logo de governo conforme aprovação da SECOM. [caduvieira]
 
 # 2.1.19
