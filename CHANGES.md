@@ -2,6 +2,7 @@
 
 # 2.1.20
 
+* Dando destaque ao link 'serviços' conforme pedido da SECOM. [caduvieira]
 * Novo logo de governo conforme aprovação da SECOM. [caduvieira]
 
 # 2.1.19
