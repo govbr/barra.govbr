@@ -1,5 +1,9 @@
 # Histórico de Alterações
 
+# 2.1.22
+
+* Corrigindo z-index do link 'Serviços' para ficar acima da lista nos mobiles [caduvieira]
+
 # 2.1.21
 
 * Dando destaque ao link 'serviços' conforme pedido da SECOM. [caduvieira]
