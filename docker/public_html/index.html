@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+		  <meta charset="utf-8" />
+		  <meta name=viewport content="width=device-width, initial-scale=1">
+		  <meta property="creator.productor" content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981"/>
+       <title>Barra Brasil</title>
+       <script src="https://code.jquery.com/jquery-1.7.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+		  <script type="text/javascript">
+
+$(document).ready(function($){
+
+				$( "#contraste" ).click(function() {
+					$( "body" ).toggleClass( "contraste" );
+				});
+});
+		  </script>
+	<!--Adicionado para fazer os testes via mocha/chai-jq/chai/zombie -->
+		  <script type="text/javascript" src="jquery.js"></script>
+        <style type="text/css">
+
+body {
+	font-family: sans-serif, Arial;
+	margin: 0px;
+	padding: 0px;
+}
+
+#content {
+	padding: 50px;
+}
+
+#footer-brasil {
+   background: none repeat scroll 0% 0% #00420c;
+   padding: 1em 0px;
+   max-width: 100%;
+}
+
+        </style>
+    </head>
+
+
+    <body>
+			<a href="#content" style="top:-9999px;position:absolute;">Início do conteúdo</a>
+        <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;"> 
+	<ul id="menu-barra-temp" style="list-style:none;">
+		<li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED"><a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a></li> 
+		<li><a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a></li>
+	</ul>
+</div>
+<div id="content">
+ <h1 id="principalll">Barra Brasil versão 2.1.22</h1>
+ <p>ID do Ministério do Planejamento: http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/2981</p>
+ <p>Veja as <a href="http://barra.governoeletronico.gov.br/">instruções de como usar a barra</a> no e-PWG.</p>
+ <p>Como requisito para a campanha seja habilitada é necessário ter carregado o jQuery versão 1.7 no mínimo. Esse carregamento deve ocorrer antes da chamada da barra.js</p>
+ <p> <a href="#" id="contraste">Habilitar Alto Contraste.</a></p>
+ <p><a href="https://portal.softwarepublico.gov.br/gitlab/govbr/barra-govbr">Contribua com a barra no software público brasileiro</a></p>
+</div><!-- #content -->
+		  <div id="footer-brasil"></div>
+ <script defer src="barra.js" type="text/javascript"></script>
+    </body>
+</html>
