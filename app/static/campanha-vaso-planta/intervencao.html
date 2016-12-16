@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Aedes</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+		<!-- INICIO DO CÓDIGO -->
+
+		<script type="text/javascript">
+		//<![CDATA[
+			window.onload = function() {
+				if (window.jQuery) {
+					var cookieCampaign = "vasoPlantaCounter";
+					var repeatTimes = 2;
+
+					if (getCookieCampaign(cookieCampaign) < repeatTimes) {
+						$(document.head).append('<style>@media (max-width:1250px){#campanha-contra-aegypti{display:none}}@media (min-width:940px){body #aegypti-intervencao #aegypti-close{width:42px;height:42px;margin-left:348px;top:42px;left:50%}}#aegypti-intervencao{width:100%;margin-top:-140px;position:fixed;z-index:999999;top:50%;text-align:center}#aegypti-intervencao #aegypti-banner:focus{outline:0!important}#aegypti-intervencao #aegypti-close{width:4.4%;height:12%;display:block;position:absolute;top:12.4%;left:87.2%;overflow:hidden;text-indent:-999999px}#aegypti-intervencao img{width:100%;max-width:939px}#campanha-contra-aegypti{width:80px;height:152px;margin-left:-600px;display:block;position:absolute;top:44px;left:50%;background-repeat:no-repeat}#campanha-contra-aegypti.vaso-planta{animation:fadeIn 2s;cursor:url("pa.cur"), default;background-image:url(vaso.png)}#campanha-contra-aegypti.vaso-planta:hover{background-position:-129px 0}@keyframes fadeIn{from{opacity:0}to{opacity:1}}</style>');
+						$(document.body).prepend('<a id="campanha-contra-aegypti" href="#" class="vaso-planta"></a>');
+
+						$('#campanha-contra-aegypti').on("click", function() {
+							if (! $('#aegypti-intervencao').length) {
+								var splashImage = "splash_vaso.png";
+								var splashContent = "Não podemos deixar o mosquito nascer. Eliminar a água parada é o primeiro passo. Coloque areia nos pratinhos dos vasos de planta. Saiba como fazer sua parte.";
+								var splash = '<div id="aegypti-intervencao"><a href="http://combateaedes.saude.gov.br/" id="aegypti-banner" target="_blank" title="Faça sua parte"><img src="' + splashImage + '" alt="' + splashContent + '" /></a><a href="#" id="aegypti-close" title="Fechar">Fechar</a></div>';
+
+								$('#barra-brasil').length ? $(splash).insertAfter($('#barra-brasil')) : $(document.body).prepend($(splash));
+
+								$('#aegypti-intervencao #aegypti-banner').focus();
+								$('#aegypti-intervencao a').on("click", function() {
+									$(this).parent().fadeOut();
+
+									return false;
+								});
+							}
+							else {
+								$('#aegypti-intervencao').fadeIn();
+								$('#aegypti-intervencao #aegypti-banner').focus();
+							}
+
+							return false;
+						});
+
+						setCookieCampaign(cookieCampaign, (parseInt(getCookieCampaign(cookieCampaign)) + 1), 7);
+					}	
+				}
+
+				function setCookieCampaign(cname,cvalue,exdays) {
+					var d = new Date();
+					d.setTime(d.getTime() + (exdays*24*60*60*1000));
+					var expires = "expires=" + d.toGMTString();
+					document.cookie = cname+"="+cvalue+"; "+expires;
+				}
+
+				function getCookieCampaign(cname) {
+					var name = cname + "=";
+					var ca = document.cookie.split(';');
+					for(var i=0; i<ca.length; i++) {
+						var c = ca[i];
+						while (c.charAt(0)==' ') c = c.substring(1);
+						if (c.indexOf(name) == 0) {
+							return c.substring(name.length, c.length);
+						}
+					}
+					return 0;
+				}
+			};
+		//]]>
+		</script>
+
+		<!-- FIM DO CÓDIGO -->
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body { height: 2000px; background: url(background.png) center top no-repeat; }
+
+			/* @media (max-width: 1250px) {
+				#campanha-contra-aegypti {
+					display: none;
+				}
+			}
+
+			@media (min-width: 940px) {
+				body #aegypti-intervencao #aegypti-close {
+					width: 42px;
+					height: 42px;
+					margin-left: 348px;
+					top: 42px;
+					left: 50%;
+				}
+			}
+			#aegypti-intervencao {
+				width: 100%;
+				margin-top: -140px;
+				position: fixed;
+				z-index: 999999;
+				top: 50%;
+				text-align: center;
+			}
+			#aegypti-intervencao #aegypti-banner:focus {
+				outline: none !important;
+			}
+			#aegypti-intervencao #aegypti-close {
+				width: 4.4%;
+				height: 12%;
+				display: block;
+				position: absolute;
+				top: 12.4%;
+				left: 87.2%;
+				overflow: hidden;
+				text-indent: -999999px;
+			}
+			#aegypti-intervencao img {
+				width: 100%;
+				max-width: 939px;
+			}
+
+			#campanha-contra-aegypti {
+				width: 80px;
+				height: 152px;
+				margin-left: -600px;
+				position: absolute;
+				top: 44px;
+				left: 50%;
+				background-repeat: no-repeat;
+			}
+			#campanha-contra-aegypti.vaso-planta {
+				animation: fadeIn 2s;
+				cursor: url(pa.cur) 0 25, pointer;
+				background-image: url(vaso.png);
+			}
+			#campanha-contra-aegypti.vaso-planta:hover {
+				background-position: -129px 0;
+			}
+
+			@keyframes fadeIn {
+				from { opacity: 0; }
+				to { opacity: 1; }
+			}*/		
+		</style>
+	</head>
+	<body>
+		
+	</body>
+</html>
