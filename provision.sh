@@ -20,4 +20,4 @@ GIT_SSL_NO_VERIFY=true git clone http://portal.softwarepublico.gov.br/gitlab/gov
 
 cd barra-govbr
 
-make run
+PROFILE=default make run

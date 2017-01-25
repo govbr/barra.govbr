@@ -1,6 +1,6 @@
 from flask import Flask, url_for, render_template, request, Response, make_response
 from config import Config
-import hashlib, zlib
+import hashlib, zlib, datetime
 
 # Criar Key e certificado
 # openssl genrsa 1024 > ssl.key
@@ -51,7 +51,7 @@ def barra():
         resposta.set_etag(etag)
     resposta.headers['Content-type'] = 'application/x-javascript'
     resposta.headers['Cache-control'] = 'public, max-age: 31536000' #1 ano
-    resposta.headers['Last-Modified'] = data
+    resposta.headers['Last-Modified'] = datetime.datetime.now()
     return resposta
 
 if __name__ == '__main__':
