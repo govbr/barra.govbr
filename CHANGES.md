@@ -1,5 +1,10 @@
 # Histórico de Alterações
 
+# 2.2.0
+
+* Correção do vagrant [caduvieira, idgserpro]
+* Versão para docker [caduvieira]
+
 # 2.1.22
 
 * Corrigindo z-index do link 'Serviços' para ficar acima da lista nos mobiles [caduvieira]
