@@ -35,11 +35,7 @@ def pagina_teste():
 
 @app.route('/barra.js')
 def barra():
-    f = app.open_resource('profile')
-    cfg = Config(f)
-    profile = cfg.profile
-    data = cfg.date
-    with app.open_resource('templates/%s/barra-brasil.js' % profile) as f:
+    with app.open_resource('templates/default/barra-brasil.js') as f:
         conteudo = f.read().decode('utf-8')
     etag = hashlib.sha1(conteudo.encode('utf-8')).hexdigest()
     accept_encoding = request.headers.get('Accept-Encoding', '')

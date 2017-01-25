@@ -5,7 +5,7 @@ export DEBIAN_FRONTEND='noninteractive'
 cd /home/vagrant
 
 # Installing nvm
-wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
 
 # This enables NVM without a logout/login
 export NVM_DIR="/home/vagrant/.nvm"
@@ -20,4 +20,4 @@ GIT_SSL_NO_VERIFY=true git clone http://portal.softwarepublico.gov.br/gitlab/gov
 
 cd barra-govbr
 
-make venv
+make run
