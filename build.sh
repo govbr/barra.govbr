@@ -4,7 +4,7 @@ if [ -n "$1" ]
 then
     profile=$1
 else
-    profile=$(cat app/profile | awk 'FNR == 1 {print $3}')
+    profile="default"
 fi
 
 if test -d "recipes/$profile"

@@ -1,6 +1,6 @@
 # Makefile
 
-test: build teste run
+test: build teste
 run: build
 		venv/bin/python app/barrabrasil.py
 
