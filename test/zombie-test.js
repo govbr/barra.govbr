@@ -6,8 +6,9 @@ var expect = require("chai").expect,
 	app = require("./app");
 
 describe("Testes de conteúdo de HTML da barra", function() {
-	var server, browser, barraUrl;
+	var server, browser, barraUrl, barraFonte;
 	barraUrl = "http://localhost:3000/";
+   barraFonte = "http://localhost:3000/static/opensans-bold.woff";
 	before(function() {
 		server = app.listen(3000);
 	});
@@ -34,6 +35,13 @@ describe("Testes de conteúdo de HTML da barra", function() {
 		   browser.visit(barraUrl, function() {
          var inner_footer = browser.document.getElementById("footer-brasil");
 			expect(inner_footer.innerHTML).to.equal("<div id=\"wrapper-footer-brasil\"><a href=\"http://www.acessoainformacao.gov.br/\"><span class=\"logo-acesso-footer\"></span></a><a href=\"http://www.brasil.gov.br/\"><span class=\"logo-brasil-footer\"></span></a></div>");
+			done();
+		});
+	});
+
+   it("A fonte deve estar respondendo", function(done) {
+		   browser.visit(barraFonte, function() {
+         expect(browser.response.status).to.equal(200);
 			done();
 		});
 	});

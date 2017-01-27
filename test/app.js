@@ -22,6 +22,11 @@ app.get('/jquery.js', function (req, res)
     res.render('jquery');
 });
 
+app.get('/static/opensans-bold.woff', function (req, res)
+{
+    res.render('opensansbold');
+});
+
 // instead of starting the application here, export the app so that it can
 // be loaded differently based on the use case (running the app vs testing)
 module.exports = app;
