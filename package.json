@@ -3,14 +3,14 @@
 "description": "Barra oficial do governo federal brasileiro",
 "devDependencies": {
 "variable-replacer": "1.5.1",
-"coffee-script": "1.10.0",
+"coffee-script": "1.12.3",
 "coffeescript-concat": "1.0.14",
 "uglifyjs": "2.4.10",
 "express": "4.13.4",
 "chai": "3.5.0",
 "chai-jq": "0.0.9",
 "mocha": "2.4.5",
-"zombie": "4.2.1",
+"zombie": "5.0.5",
 "ejs": "2.4.1"
 },
 "optionalDependencies": {},
