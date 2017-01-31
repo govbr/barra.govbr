@@ -29,6 +29,7 @@ then
     cp templates/$profile/barra-brasil-es.js ../docker/public_html/barra.js.es #Copiando enquanto a barra é estática.
     cp templates/exemplo.html ../docker/public_html/index.html #Copiando enquanto a barra é estática.
     cp static/opensans-bold.woff ../docker/public_html/static/ #Copiando enquanto a barra é estática.
+    cp static/jquery-2.1.3.min.js ../docker/public_html/jquery.js #Copiando enquanto a barra é estática.
     echo "Copiado"
 else
     echo "Erro. O profile '$profile' não existe."

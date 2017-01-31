@@ -21,7 +21,10 @@ testReport:
 		npm run testReport 
 
 teste:
+		docker-compose -f docker/docker-compose.yml up -d
 		npm run test
+		docker rm -f docker_web_1
+		docker rmi -f docker_web
 
 
 		

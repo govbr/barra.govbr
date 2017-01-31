@@ -1,4 +1,16 @@
-web:
-  image: govbr/barra.govbr
+certificado-barrabrasil:
   ports:
-   - "80:80"
+  - 443:80
+  labels:
+    io.rancher.loadbalancer.ssl.ports: '443'
+  tty: true
+  image: rancher/load-balancer-service
+  links:
+  - web:web
+  stdin_open: true
+web:
+  ports:
+  - 80:80/tcp
+  tty: true
+  image: hub.docker.planejamento.gov.br/barra-brasil:2.1.21
+  stdin_open: true
