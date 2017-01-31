@@ -21,10 +21,11 @@ testReport:
 		npm run testReport 
 
 teste:
-		docker-compose -f docker/docker-compose.yml up -d
+		docker build docker -t barra-govbr-image
+		docker run -dit -p 80:80 --name barra-govbr barra-govbr-image
 		npm run test
-		docker rm -f docker_web_1
-		docker rmi -f docker_web
+		docker rm -f barra-govbr
+		docker rmi -f barra-govbr-image
 
 
 		
