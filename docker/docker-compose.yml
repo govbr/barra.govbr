@@ -12,5 +12,5 @@ web:
   ports:
   - 80:80/tcp
   tty: true
-  image: hub.docker.planejamento.gov.br/barra-brasil:2.1.21
+  image: barrabrasil/barra-brasil:${VERSION}
   stdin_open: true
