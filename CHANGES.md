@@ -1,5 +1,21 @@
 # Histórico de Alterações
 
+# 2.2.4
+
+* Corrigindo chamada da fonte [caduvieira]
+
+# 2.2.3
+
+* Correção docker-compose para DTI [caduvieira]
+
+# 2.2.2
+
+* Correção docker-compose para DTI [caduvieira]
+
+# 2.2.1
+
+* Correção docker-compose para DTI [caduvieira]
+
 # 2.2.0
 
 * Correção do vagrant [caduvieira, idgserpro]
