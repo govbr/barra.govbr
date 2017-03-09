@@ -13,12 +13,10 @@ describe("Testes de conteúdo de HTML da barra", function() {
 	beforeEach(function() {
 		browser = new Browser();
 		browser.runScripts = true;
+		browser.headers = {};
 	});
 
 	it("trocar o conteúdo do #barra-brasil pelo correto em pt-BR", function(done) {
-			if (!browser.headers) {
-			    browser.headers = {};
-			}
 			browser.headers['Accept-Language'] = 'pt-BR';
 			browser.visit(barraUrl, function() {
          var inner_barra = browser.document.getElementById("barra-brasil");
@@ -28,9 +26,6 @@ describe("Testes de conteúdo de HTML da barra", function() {
    });
 
 	it("trocar o conteúdo do #barra-brasil pelo correto em en", function(done) {
-			if (!browser.headers) {
-			    browser.headers = {};
-			}
 			browser.headers['Accept-Language'] = 'en';
 			browser.visit(barraUrl, function() {
          var inner_barra = browser.document.getElementById("barra-brasil");
@@ -40,9 +35,6 @@ describe("Testes de conteúdo de HTML da barra", function() {
    });
 
 	it("trocar o conteúdo do #barra-brasil pelo correto em es", function(done) {
-			if (!browser.headers) {
-			    browser.headers = {};
-			}
 			browser.headers['Accept-Language'] = 'es';
 			browser.visit(barraUrl, function() {
          var inner_barra = browser.document.getElementById("barra-brasil");
@@ -52,9 +44,6 @@ describe("Testes de conteúdo de HTML da barra", function() {
    });
 
 	it("trocar o conteúdo do #barra-brasil pelo correto em fr", function(done) {
-			if (!browser.headers) {
-			    browser.headers = {};
-			}
 			browser.headers['Accept-Language'] = 'fr';
 			browser.visit(barraUrl, function() {
          var inner_barra = browser.document.getElementById("barra-brasil");
@@ -82,9 +71,6 @@ describe("Testes de conteúdo de HTML da barra", function() {
 	});
 
    it("Cabeçalhos HTTP do barra.js devem estar ok", function(done) {
-			if (!browser.headers) {
-	    		browser.headers = {};
-			}
 			browser.headers['Accept-Encoding'] = 'gzip';		   
 			browser.visit(barraJS, function() {
 			expect(browser.response.headers._headers[9]).to.include.members(['content-encoding', 'gzip']);
@@ -93,6 +79,17 @@ describe("Testes de conteúdo de HTML da barra", function() {
 			expect(browser.response.headers._headers[13]).to.include.members(['access-control-allow-origin', '*']);
          expect(browser.response.status).to.equal(200);
 			done();
+		});
+	});
+
+   it("Barra responde 304 com etag", function(done) {
+			browser.visit(barraJS, function() {
+
+			browser.headers['If-Modified-Since'] = browser.response.headers._headers[7][1];
+			browser.visit(barraJS, function() {
+	         expect(browser.response.status).to.equal(304);
+				done();
+			});
 		});
 	});
 
