@@ -5,9 +5,10 @@ var expect = require("chai").expect,
 	Browser = require("zombie");
 
 describe("Testes de conteúdo de HTML da barra", function() {
-	var browser, barraUrl, barraFonte;
+	var browser, barraUrl, barraFonte, barraJS;
 	barraUrl = "http://localhost/";
-   barraFonte = "http://localhost/static/opensans-bold.woff";
+   barraFonte = barraUrl + "static/opensans-bold.woff";
+   barraJS = barraUrl +"barra.js";
 
 	beforeEach(function() {
 		browser = new Browser();
@@ -72,29 +73,28 @@ describe("Testes de conteúdo de HTML da barra", function() {
 
    it("A fonte deve estar respondendo", function(done) {
 		   browser.visit(barraFonte, function() {
-			expect(browser.response.headers._headers[3]).to.include.members(['etag']);
-			expect(browser.response.headers._headers[9]).to.include.members(['access-control-allow-origin', '*']);
-			expect(browser.response.headers._headers[11]).to.include.members(["content-type","application/x-font-woff"]);
+			expect(browser.response.headers._headers[10]).to.include.members(['etag']);
+			expect(browser.response.headers._headers[11]).to.include.members(['access-control-allow-origin', '*']);
+			expect(browser.response.headers._headers[12]).to.include.members(["content-type","application/x-font-woff"]);
          expect(browser.response.status).to.equal(200);
 			done();
 		});
 	});
 
-   it("Cabeçalhos  HTTP do barra.js devem estar ok", function(done) {
+   it("Cabeçalhos HTTP do barra.js devem estar ok", function(done) {
 			if (!browser.headers) {
 	    		browser.headers = {};
 			}
 			browser.headers['Accept-Encoding'] = 'gzip';		   
-			browser.visit("http://localhost/barra.js", function() {
-			expect(browser.response.headers._headers[6]).to.include.members(['etag']);
-			expect(browser.response.headers._headers[8]).to.include.members(['content-encoding', 'gzip']);
-			expect(browser.response.headers._headers[9]).to.include.members(['cache-control','max-age=604800']);
-			expect(browser.response.headers._headers[11]).to.include.members(['access-control-allow-origin', '*']);
+			browser.visit(barraJS, function() {
+			expect(browser.response.headers._headers[9]).to.include.members(['content-encoding', 'gzip']);
+			expect(browser.response.headers._headers[10]).to.include.members(['cache-control','max-age=604800, public']);
+			expect(browser.response.headers._headers[12]).to.include.members(['etag']);
+			expect(browser.response.headers._headers[13]).to.include.members(['access-control-allow-origin', '*']);
          expect(browser.response.status).to.equal(200);
 			done();
 		});
 	});
-
 
    it("a barra deve ter o css correto para visualizacao maior que 960px");
 
