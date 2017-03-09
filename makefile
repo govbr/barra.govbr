@@ -23,9 +23,9 @@ testReport:
 teste:
 		docker build docker -t barra-govbr-image
 		docker run -dit -p 80:80 --name barra-govbr barra-govbr-image
-		npm run test
-		docker rm -f barra-govbr
-		docker rmi -f barra-govbr-image
+# TODO usar trap para EXIT
+		npm run test || (docker rm -f barra-govbr &&	docker rmi -f barra-govbr-image)
+		docker rm -f barra-govbr && docker rmi -f barra-govbr-image
 
 
 		
