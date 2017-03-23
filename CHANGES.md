@@ -1,5 +1,9 @@
 # Histórico de Alterações
 
+# 2.2.5
+
+* Corrigindo língua default para português [caduvieira]
+
 # 2.2.4
 
 * Corrigindo chamada da fonte [caduvieira]
