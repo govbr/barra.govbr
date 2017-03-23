@@ -82,7 +82,15 @@ describe("Testes de conteúdo de HTML da barra", function() {
 		});
 	});
 
-   it("Barra responde 304 com etag", function(done) {
+   it("Língua default é pt-br", function(done) {
+			browser.visit(barraJS, function() {
+			expect(browser.response.headers._headers[15]).to.include.members(['content-language', 'pt-br']);
+	      expect(browser.response.status).to.equal(200);
+			done();
+		});
+	});
+
+   it("Barra.js responde 304", function(done) {
 			browser.visit(barraJS, function() {
 
 			browser.headers['If-Modified-Since'] = browser.response.headers._headers[7][1];
