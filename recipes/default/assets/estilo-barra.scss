@@ -93,6 +93,15 @@ div#wrapper-barra-brasil {
     height: 32px;
 }
 
+#barra-brasil .eselo {
+    position: absolute;
+    top: 0;
+    right: 44px;
+    display: block;
+    font-size: 1.25em;
+    color: blue;
+}
+
 #barra-brasil .acesso-info {
     position: absolute;
     left: 130px;
@@ -103,6 +112,10 @@ div#wrapper-barra-brasil {
     position: absolute;
     top: 0;
     right: 40px;
+}
+
+#barra-brasil .list-eselo{
+    right: 90px !important;
 }
 
 #barra-brasil .list .first { border-left: 2px solid $cor-borda; }
