@@ -40,14 +40,12 @@
 
   add_eselo = () ->
     response = JSON.parse @responseText
-    console.log response
     if response.valor
         eselo = document.getElementById "eselo"
         eselo.setAttribute 'href', response.urlResultado
         eselo.setAttribute 'title', 'Avaliado em: '+ new Date(response.dataAvaliacao).toLocaleString()
         eselo.setAttribute 'aria-label', 'Avaliação de acessibilidade do site' + window.location.href
         eselo.innerHTML = '\u267F '+response.valor
-
         document.getElementById("lista-barra-brasil").className += " list-eselo"
     return
 
