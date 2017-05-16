@@ -18,7 +18,10 @@ venv/bin/activate: requirements.txt package.json
 		npm install
 
 testReport: 
-		npm run testReport 
+		trap 'docker rm -f barra-govbr && docker rmi -f barra-govbr-image' EXIT && \
+                docker build docker -t barra-govbr-image && \
+                docker run -dit -p 80:80 --name barra-govbr barra-govbr-image && \
+                npm run testReport 
 
 teste:
 		trap 'docker rm -f barra-govbr && docker rmi -f barra-govbr-image' EXIT && \
