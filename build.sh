@@ -30,6 +30,7 @@ then
     cp templates/exemplo.html ../docker/public_html/index.html #Copiando enquanto a barra é estática.
     cp static/opensans-bold.woff ../docker/public_html/static/ #Copiando enquanto a barra é estática.
     cp static/jquery-2.1.3.min.js ../docker/public_html/static/jquery.js #Copiando enquanto a barra é estática.
+    cp static/vlibras.gif ../docker/public_html/imagens/vlibras.gif #Copiando enquanto a barra é estática.
     echo "Copiado"
 else
     echo "Erro. O profile '$profile' não existe."

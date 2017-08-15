@@ -33,6 +33,17 @@ def pagina_teste():
     except IOError:
         return make_response("<h1>403 Forbidden</h1>", 403)
 
+@app.route('/imagens/vlibras.gif')
+def vlibras_teste():
+    try:
+        with app.open_resource('static/vlibras.gif') as f:
+            conteudo = f.read()
+        resposta = make_response(conteudo)
+        resposta.headers['Content-type'] = 'image/gif'
+        return resposta
+    except IOError:
+        return make_response("<h1>403 Forbidden</h1>", 403)
+
 @app.route('/barra.js')
 def barra():
     with app.open_resource('templates/default/barra-brasil.js') as f:

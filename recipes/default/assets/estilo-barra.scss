@@ -83,14 +83,51 @@ div#wrapper-barra-brasil {
     line-height: 19px;
 }
 
-#barra-brasil .logo-vlibras {
+#barra-brasil #brasil-vlibras {
     position: absolute;
     top: 0;
     right: 0;
     display: block;
-    background: embed("imagens/vlibras.svg") 8px center no-repeat;
-    width: 43px;
-    height: 32px;
+    padding-top: 32px;
+
+
+   .logo-vlibras {
+     background: embed("imagens/vlibras.svg") 8px center no-repeat;
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 43px;
+     height: 32px;
+     display: block;
+   }
+
+   .link-vlibras {
+		height: 0;
+		transition: 0.1s;
+		width: 170px;
+     z-index: 9;
+     height: 0;
+     display: block;
+     border: 2px solid $cor-borda;
+     padding: 10px 24px 175px 24px;
+     color: $cor-link;
+		visibility: hidden;
+		position: relative;
+  }
+		
+  .logo-vlibras:hover + .link-vlibras,
+  .logo-vlibras:active + .link-vlibras,
+  .logo-vlibras:focus + .link-vlibras,
+   .link-vlibras:hover,
+   .link-vlibras:active,
+   .link-vlibras:focus {
+     height: 32px;
+     display: block;
+     border: 2px solid $cor-borda;
+     padding: 10px 24px 175px 24px;
+     visibility: visible;
+     background: $cor-fundo;
+   }
 }
 
 #barra-brasil .eselo {
