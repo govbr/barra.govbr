@@ -3,7 +3,7 @@
 "description": "Barra oficial do governo federal brasileiro",
 "devDependencies": {
 "variable-replacer": "1.5.1",
-"coffee-script": "1.12.3",
+"coffee-script": "1.12.5",
 "coffeescript-concat": "1.0.14",
 "uglifyjs": "2.4.10",
 "chai": "3.5.0",
