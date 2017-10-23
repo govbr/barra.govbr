@@ -25,3 +25,15 @@
         style.appendChild document.createTextNode(css)
         
         head.appendChild style
+
+  loadFile = (sURL, fCallback) ->
+    oReq = new XMLHttpRequest
+    oReq.arguments = Array::slice.call(arguments, 2)
+    oReq.open 'POST', sURL, true
+    oReq.setRequestHeader 'Content-Type', 'application/x-www-form-urlencoded'
+    param = 'url='+window.location.href 
+    oReq.send param
+    return
+
+  loadFile 'http://eselo-prd.brazilsouth.cloudapp.azure.com:8080/buscar-avaliacao'
+

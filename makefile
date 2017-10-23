@@ -12,7 +12,7 @@ build: venv
 
 venv: venv/bin/activate
 venv/bin/activate: requirements.txt package.json
-		test -d .env || virtualenv --no-site-packages venv
+		test -d venv || virtualenv --no-site-packages venv
 		venv/bin/pip install -Ur requirements.txt
 		touch venv/bin/activate
 		npm install

@@ -1,5 +1,10 @@
 # Histórico de Alterações
 
+# 2.2.6
+
+* Acrescenta imagem do VLibras [caduvieira]
+* Acrescenta chamada para eselo que calcula 'valor de acessibilidade' conforme emag [caduvieira]
+
 # 2.2.5
 
 * Corrigindo língua default para português [caduvieira]
