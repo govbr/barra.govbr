@@ -1,5 +1,9 @@
 # Histórico de Alterações
 
+# 2.2.7
+
+* Corrigi z-indez [caduvieira]
+
 # 2.2.6
 
 * Acrescenta imagem do VLibras [caduvieira]
