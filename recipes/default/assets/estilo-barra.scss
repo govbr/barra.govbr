@@ -12,7 +12,6 @@
     font-size: 100%;
     font-family: inherit;
     vertical-align: baseline;
-    z-index: 10;
   }
 }
 
@@ -88,9 +87,6 @@ div#wrapper-barra-brasil {
     position: absolute;
     top: 0;
     right: 0;
-    display: block;
-    padding-top: 32px;
-    z-index: 8;
 
 
    .logo-vlibras {
@@ -107,10 +103,8 @@ div#wrapper-barra-brasil {
 	  height: 0;
   	  transition: 0.1s;
 	  width: 170px;
-     height: 0;
      display: block;
      border: 2px solid $cor-borda;
-     padding: 10px 24px 175px 24px;
      color: $cor-link;
 	  visibility: hidden;
 	  position: relative;
@@ -122,12 +116,14 @@ div#wrapper-barra-brasil {
    .link-vlibras:hover,
    .link-vlibras:active,
    .link-vlibras:focus {
-     height: 50px;
+     width: 170px;
+     height: 250px;
      display: block;
      border: 2px solid $cor-borda;
-     padding: 10px 24px 175px 24px;
+     padding: 10px 24px 260px 24px;
      visibility: visible;
      background: $cor-fundo;
+     z-index: 8;
    }
 }
 
@@ -143,7 +139,6 @@ div#wrapper-barra-brasil {
 #barra-brasil .acesso-info {
     position: absolute;
     left: 130px;
-    z-index: 10;
 }
 
 #barra-brasil .list {
