@@ -1,5 +1,9 @@
 # Histórico de Alterações
 
+# 2.2.9
+
+* Altera o link do 'Simplifique!' a pedido da CGU e da SECOM [caduvieira]
+
 # 2.2.8
 
 * Adiciona o link do 'Simplifique!' a pedido da CGU e da SECOM [caduvieira]
