@@ -102,7 +102,7 @@ div#wrapper-barra-brasil {
    .link-vlibras {
 	  height: 0;
   	  transition: 0.1s;
-	  width: 170px;
+	  width: 166px !important;
      display: block;
      border: 2px solid $cor-borda;
      color: $cor-link;
@@ -116,11 +116,11 @@ div#wrapper-barra-brasil {
    .link-vlibras:hover,
    .link-vlibras:active,
    .link-vlibras:focus {
-     width: 170px;
-     height: 250px;
-     display: block;
+     width: 166px !important;
+     height: 50px !important;
+     display: inline-table;
      border: 2px solid $cor-borda;
-     padding: 10px 24px 260px 24px;
+     padding: 10px 24px 10px 24px;
      visibility: visible;
      background: $cor-fundo;
      z-index: 8;

@@ -2,6 +2,10 @@
 
 # 2.2.9
 
+* Corrigi z-index #29 [caduvieira]
+
+# 2.2.9
+
 * Altera o link do 'Simplifique!' a pedido da CGU e da SECOM [caduvieira]
 
 # 2.2.8
