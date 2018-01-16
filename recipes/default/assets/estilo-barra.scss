@@ -101,6 +101,7 @@ div#wrapper-barra-brasil {
 
    .link-vlibras {
 	  height: 0;
+     top: 32px;
   	  transition: 0.1s;
 	  width: 166px !important;
      display: block;
@@ -110,6 +111,8 @@ div#wrapper-barra-brasil {
 	  position: relative;
      a:hover, a:focus, a:active {
        visibility: visible;
+       background: $cor-fundo;
+       z-index: 8;
      }
   }
 		
