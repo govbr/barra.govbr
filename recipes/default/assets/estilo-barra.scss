@@ -108,6 +108,9 @@ div#wrapper-barra-brasil {
      color: $cor-link;
 	  visibility: hidden;
 	  position: relative;
+     a:hover, a:focus, a:active {
+       visibility: visible;
+     }
   }
 		
   .logo-vlibras:hover + .link-vlibras,
