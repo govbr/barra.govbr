@@ -1,12 +1,18 @@
 # Histórico de Alterações
 
-# 2.2.9
+# 2.2.11
+
+* Altera o top e visibilidade do link do vlibras [caduvieira]
+* Corrigi texto quebrado no Chrome [caduvieira]
+
+# 2.2.10
 
 * Corrigi z-index #29 [caduvieira]
 
 # 2.2.9
 
 * Altera o link do 'Simplifique!' a pedido da CGU e da SECOM [caduvieira]
+* Remove eSELO devido a falta de CORS no servidor deles [caduvieira]
 
 # 2.2.8
 
