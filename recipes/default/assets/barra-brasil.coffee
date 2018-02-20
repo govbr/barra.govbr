@@ -5,6 +5,25 @@
     divBarra.innerHTML = conteudoBarra
     head = document.getElementsByTagName("head")[0]
 
+  clickHandler = ->
+    if event.target.id == 'openModalBarra' or event.target.id == 'closeModalBarra'
+      document.getElementById('openModalBarra').className = 'modalDialogBarraClose'
+      document.getElementById('barraiFrame').src = ''
+    return
+
+  anchor = document.getElementById('closeModalBarra')
+  if anchor.addEventListener
+    anchor.addEventListener 'click', clickHandler, false
+  else if anchor.attachEvent
+    anchor.attachEvent 'onclick', ->
+      clickHandler.apply anchor, [ window.event ]
+  anchor = document.getElementById('openModalBarra')
+  if anchor.addEventListener
+    anchor.addEventListener 'click', clickHandler, false
+  else if anchor.attachEvent
+    anchor.attachEvent 'onclick', ->
+      clickHandler.apply anchor, [ window.event ]
+
   getOrgaoContent = ->
     metas = document.getElementsByTagName 'meta' 
     i = 0
@@ -25,4 +44,3 @@
         style.appendChild document.createTextNode(css)
         
         head.appendChild style
-
